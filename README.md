@@ -1,66 +1,84 @@
 # istock
 
-**Give it a stock ticker → it scores the stock 0–100 with a trained model, tells you BUY / HOLD / SELL.**
+**Transparency-first equity research — the anti–black-box.**
 
-A stock technical-analysis and trade-recommendation system for US equities. You give it a ticker (e.g. `AAPL`); it fetches price data, runs technical, fundamental and market context checks, scores the stock 0–100 with a trained logistic-regression model based on different features and turns that score into a verdict (STRONG BUY → AVOID)
+There's a wave of "AI picks your stocks" products right now: you type a ticker, it
+says *BUY*, and you're asked to trust a number you can't inspect. istock is the
+opposite bet. It shows you **the entire reasoning** — every metric, honest
+confidence labels, and the costs — and lets *you* decide whether to believe it.
 
----
-
-<!-- Add screenshots — e.g. ![Deep dive](docs/screenshots/deep-dive.png) -->
-### Quick Stock Insights
-![Home](Quick%20Stock%20Insights.png)
-
-### Price Chart with Supporting Verdicts
-![Price Chart](Price%20Chart%20with%20supporting%20Verdicts.png)
-
-### Stock Opportunities
-![Stock Opportunities](Stock%20Opportunities.png)
-
+> The goal isn't a magic verdict. It's an analyst that shows its work.
 
 ---
 
-## How it works
+## Why this exists
 
-The system reads the last year of daily candles and computes ~25 technical indicators (moving averages, RSI, MACD, ATR, ADX, Bollinger Bands, volume, OBV, etc.). A trained model turns that vector into a single **0–100 score**, which maps to a **verdict**. 
-
-```
-ticker
-  │
-  ▼  1. FETCH DATA        1y daily + 2y weekly + market index + fundamentals; ~25 indicators
-  ▼  2. PRICE LEVELS      support / resistance / Fibonacci, clustered into stronger levels
-  ▼  3. ANALYZERS         8 scoring analyzers (trend, location, setup, volume, momentum,
-  │                       candles, risk/reward, market context) + avoid & sell checks
-  ▼  4. FEATURE VECTOR    all checks + 11 extra signals → 36-number on/off vector
-  ▼  5. SCORE             sigmoid(weights · features) × 100  →  0–100
-  ▼  6. VERDICT           ≥80 STRONG BUY · ≥65 BUY · ≥55 LEAN BUY · ≥45 HOLD ·
-  │                       ≥35 LEAN SELL · ≥20 SELL · <20 AVOID   (VIX>22 downgrades one tier)
-verdict + position
-```
+Most retail "AI investing" tools optimize for a confident answer. That's exactly
+the wrong thing to trust: a backtest that looks great is usually hiding
+survivorship bias, look-ahead, or costs that quietly erase the edge. istock is
+built on the opposite principle — **be honest about what's real, and show it** —
+even when the honest answer is "this doesn't work."
 
 ---
 
-## Highlights
+## What's inside
 
-- **Market regime detector.** Reads five broad-market signals (volatility, trend, slope, breadth, yield curve) to decide whether it's even a good time to be buying, and scales position size accordingly.
-- **Point-in-time replay.** Price indicators can be recomputed as of a past date (fundamentals remain today's snapshot — yfinance has no historical fundamentals).
-- **Per-(ticker, date) score cache** so repeat lookups are instant.
+**1. Fundamental analysis engine (12 modules)**
+Give it a ticker; it runs a full due-diligence checklist and returns a 0–100
+quality score, a verdict, and *every underlying number* — not just the verdict.
+- Accounting forensics (Beneish M, Sloan accruals, Piotroski F)
+- Returns on capital (ROIC − WACC spread, DuPont ROE)
+- Valuation (reverse-DCF reality check + DCF scenarios)
+- Sector-percentile peer ranking, moat/quality, growth, capital allocation
+- A dedicated model for banks (different economics need a different model)
+- **Honest confidence labels** on every signal — robust (⭐) vs. near-worthless (☠️)
 
+**2. Strategy-research harness (QuantConnect / LEAN)**
+Replicates *published* trading strategies and stress-tests them honestly on
+survivorship-bias-free minute data — then **rejects the ones that don't survive**:
+- Transaction costs, short-borrow fees, and regime dependence, all modeled
+- Separates **gross signal from net-of-cost reality** (where most edges die)
+- Per-year breakdowns so a single lucky year can't masquerade as an edge
 
-## Project layout
+**3. Forward-logging validation**
+Instead of a survivorship-biased backtest, scores are logged *forward* and
+measured later — clean by construction (no look-ahead, no delisting scrub).
 
-```
-istock/
-├── data/         DataEngine — fetch OHLC + compute indicators
-├── features/     the 36-feature spec, live signals, and 14 analyzers
-├── model/        scorer, trained weights, exit rules
-├── decision/     TradeAdvisor (orchestrator), position sizer, regime detector
-├── execution/    live monitoring, alerts, P&L tracking
-├── training/     offline Brain v2 training (walk-forward) + diagnostics
-└── ui/           Streamlit app + terminal display
-```
+---
+
+## Design principles
+
+- **Classify first, then apply the right model** — no cherry-picked thresholds.
+- **Trend over snapshot** — multi-year series, not a single reading.
+- **Robust vs. decorative** — strong signals are weighted; weak ones are shown as
+  context only, never dressed up as alpha.
+- **Costs are always on** — net-of-cost is the only number that counts.
+- **Honest about limits** — missing or inapplicable data says so, out loud.
+
+---
+
+## Honest findings so far
+
+Because the point is honesty, the rejections are part of the record:
+
+- **Opening-Range Breakout + relative volume** — looked promising on a short
+  sample; on 10 years it was **gross-negative in every year**. Rejected.
+- **Intraday momentum** — statistically underpowered on available free data;
+  pending a longer test.
+- **ConnorsRSI mean-reversion** — the most promising candidate; currently in
+  full cost- and regime-stress testing before any claim is made.
+
+---
+
+## Roadmap
+
+Research project, in active development. Next: **ML meta-labeling** — a model that
+doesn't imitate the rules, but decides *when to trust each rule* (run a strategy
+only in the regimes where it historically works).
 
 ---
 
 ## Disclaimer
 
-This is a personal research project for educational purposes. It is **not** financial advice. Do your own research before making any investment decisions.
+Personal research project, for educational purposes. **Not** financial advice.
+Do your own research before making any investment decision.
