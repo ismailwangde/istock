@@ -1,0 +1,224 @@
+[
+  {
+    "symbol": "NVDA",
+    "name": "NVDA",
+    "type": "Stock",
+    "market": "US",
+    "notes": "SAMPLE portfolio: rule-based trader (sell half at +8%, hold losers, buy back 5% dips), real closing prices",
+    "trades": [
+      {
+        "date": "2026-06-01",
+        "qty": 1.116828,
+        "price_usd": 223.85,
+        "action": "BUY"
+      }
+    ]
+  },
+  {
+    "symbol": "MU",
+    "name": "MU",
+    "type": "Stock",
+    "market": "US",
+    "notes": "SAMPLE portfolio: rule-based trader (sell half at +8%, hold losers, buy back 5% dips), real closing prices",
+    "trades": [
+      {
+        "date": "2026-06-01",
+        "qty": 0.241466,
+        "price_usd": 1035.34,
+        "action": "BUY"
+      },
+      {
+        "date": "2026-06-18",
+        "qty": 0.120733,
+        "price_usd": 1133.82,
+        "action": "SELL"
+      },
+      {
+        "date": "2026-06-22",
+        "qty": 0.060366,
+        "price_usd": 1211.19,
+        "action": "SELL"
+      },
+      {
+        "date": "2026-06-23",
+        "qty": 0.118866,
+        "price_usd": 1051.61,
+        "action": "BUY"
+      },
+      {
+        "date": "2026-06-25",
+        "qty": 0.089616,
+        "price_usd": 1213.37,
+        "action": "SELL"
+      },
+      {
+        "date": "2026-06-26",
+        "qty": 0.044808,
+        "price_usd": 1132.16,
+        "action": "SELL"
+      },
+      {
+        "date": "2026-06-29",
+        "qty": 0.022404,
+        "price_usd": 1145.1,
+        "action": "SELL"
+      },
+      {
+        "date": "2026-06-30",
+        "qty": 0.011202,
+        "price_usd": 1154.11,
+        "action": "SELL"
+      },
+      {
+        "date": "2026-07-01",
+        "qty": 0.12111,
+        "price_usd": 1032.12,
+        "action": "BUY"
+      }
+    ]
+  },
+  {
+    "symbol": "TSLA",
+    "name": "TSLA",
+    "type": "Stock",
+    "market": "US",
+    "notes": "SAMPLE portfolio: rule-based trader (sell half at +8%, hold losers, buy back 5% dips), real closing prices",
+    "trades": [
+      {
+        "date": "2026-06-01",
+        "qty": 0.601135,
+        "price_usd": 415.88,
+        "action": "BUY"
+      }
+    ]
+  },
+  {
+    "symbol": "AMD",
+    "name": "AMD",
+    "type": "Stock",
+    "market": "US",
+    "notes": "SAMPLE portfolio: rule-based trader (sell half at +8%, hold losers, buy back 5% dips), real closing prices",
+    "trades": [
+      {
+        "date": "2026-06-01",
+        "qty": 0.490071,
+        "price_usd": 510.13,
+        "action": "BUY"
+      },
+      {
+        "date": "2026-06-22",
+        "qty": 0.245036,
+        "price_usd": 551.63,
+        "action": "SELL"
+      },
+      {
+        "date": "2026-06-23",
+        "qty": 0.240454,
+        "price_usd": 519.85,
+        "action": "BUY"
+      },
+      {
+        "date": "2026-06-30",
+        "qty": 0.242744,
+        "price_usd": 580.91,
+        "action": "SELL"
+      },
+      {
+        "date": "2026-07-01",
+        "qty": 0.231105,
+        "price_usd": 540.88,
+        "action": "BUY"
+      },
+      {
+        "date": "2026-09-21",
+        "qty": 0.236925,
+        "price_usd": 615.52,
+        "action": "SELL"
+      },
+      {
+        "date": "2026-09-22",
+        "qty": 0.118462,
+        "price_usd": 623.77,
+        "action": "SELL"
+      },
+      {
+        "date": "2026-09-23",
+        "qty": 0.059232,
+        "price_usd": 614.61,
+        "action": "SELL"
+      },
+      {
+        "date": "2026-09-24",
+        "qty": 0.029616,
+        "price_usd": 629.26,
+        "action": "SELL"
+      },
+      {
+        "date": "2026-09-25",
+        "qty": 0.014808,
+        "price_usd": 630.63,
+        "action": "SELL"
+      },
+      {
+        "date": "2026-09-28",
+        "qty": 0.007403,
+        "price_usd": 607.87,
+        "action": "SELL"
+      },
+      {
+        "date": "2026-09-29",
+        "qty": 0.003702,
+        "price_usd": 607.57,
+        "action": "SELL"
+      },
+      {
+        "date": "2026-09-30",
+        "qty": 0.001851,
+        "price_usd": 611.76,
+        "action": "SELL"
+      },
+      {
+        "date": "2026-10-01",
+        "qty": 0.000925,
+        "price_usd": 615.73,
+        "action": "SELL"
+      },
+      {
+        "date": "2026-10-02",
+        "qty": 0.000463,
+        "price_usd": 633.91,
+        "action": "SELL"
+      }
+    ]
+  },
+  {
+    "symbol": "NFLX",
+    "name": "NFLX",
+    "type": "Stock",
+    "market": "US",
+    "notes": "SAMPLE portfolio: rule-based trader (sell half at +8%, hold losers, buy back 5% dips), real closing prices",
+    "trades": [
+      {
+        "date": "2026-06-01",
+        "qty": 2.912056,
+        "price_usd": 85.85,
+        "action": "BUY"
+      }
+    ]
+  },
+  {
+    "symbol": "ORCL",
+    "name": "ORCL",
+    "type": "Stock",
+    "market": "US",
+    "notes": "SAMPLE portfolio: rule-based trader (sell half at +8%, hold losers, buy back 5% dips), real closing prices",
+    "trades": [
+      {
+        "date": "2026-06-01",
+        "qty": 1.01096,
+        "price_usd": 247.29,
+        "action": "BUY"
+      }
+    ]
+  }
+]

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.istock.prices</string>
+    <key>ProgramArguments</key>
+    <array>
+        <string>/Users/ismailwangde/fundly/.venv/bin/python</string>
+        <string>/Users/ismailwangde/ismail_personal/new/snapshot.py</string>
+        <string>prices</string>
+    </array>
+    <key>WorkingDirectory</key>
+    <string>/Users/ismailwangde/ismail_personal/new</string>
+    <key>RunAtLoad</key>
+    <true/>
+    <key>StartCalendarInterval</key>
+    <dict>
+        <key>Hour</key><integer>11</integer>
+        <key>Minute</key><integer>0</integer>
+    </dict>
+    <key>StandardOutPath</key>
+    <string>/Users/ismailwangde/ismail_personal/new/logs/cron_prices.log</string>
+    <key>StandardErrorPath</key>
+    <string>/Users/ismailwangde/ismail_personal/new/logs/cron_prices.log</string>
+</dict>
+</plist>

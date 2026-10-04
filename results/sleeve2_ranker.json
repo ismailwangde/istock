@@ -1,0 +1,123 @@
+{
+  "stats": {
+    "SPY (benchmark)": {
+      "label": "SPY (benchmark)",
+      "months": 102,
+      "total_return_pct": 166.90003377044732,
+      "cagr_pct": 12.242843981058304,
+      "vol_pct": 16.45586163220359,
+      "sharpe": 0.7870153389517422,
+      "max_drawdown_pct": -24.769522239058837
+    },
+    "Equal-weight ALL": {
+      "label": "Equal-weight ALL",
+      "months": 102,
+      "total_return_pct": 292.0363933771486,
+      "cagr_pct": 17.436501297278095,
+      "vol_pct": 17.199807422898637,
+      "sharpe": 1.0257150767085392,
+      "max_drawdown_pct": -22.212201012831777
+    },
+    "Momentum top10": {
+      "label": "Momentum top10",
+      "months": 102,
+      "total_return_pct": 1312.7302781116364,
+      "cagr_pct": 36.55295057339427,
+      "vol_pct": 34.00151664892823,
+      "sharpe": 1.0843733199195498,
+      "max_drawdown_pct": -24.85548610428451
+    },
+    "Momentum top20": {
+      "label": "Momentum top20",
+      "months": 102,
+      "total_return_pct": 759.305709268243,
+      "cagr_pct": 28.795215200738532,
+      "vol_pct": 27.690361847903343,
+      "sharpe": 1.0519305053908643,
+      "max_drawdown_pct": -18.422616610439214
+    },
+    "Momentum top30": {
+      "label": "Momentum top30",
+      "months": 102,
+      "total_return_pct": 530.1987728645238,
+      "cagr_pct": 24.181294496375028,
+      "vol_pct": 23.200899980046476,
+      "sharpe": 1.0521589657653843,
+      "max_drawdown_pct": -19.842812636007345
+    },
+    "RiskAdjMom top20": {
+      "label": "RiskAdjMom top20",
+      "months": 102,
+      "total_return_pct": 406.23780884367073,
+      "cagr_pct": 21.022255998906235,
+      "vol_pct": 22.8672222209154,
+      "sharpe": 0.9494602820735571,
+      "max_drawdown_pct": -19.904480054567852
+    }
+  },
+  "per_year": [
+    {
+      "year": 2018,
+      "SPY": -4.2,
+      "Mom20": 11.4,
+      "RAMom20": -1.1,
+      "Mom20-SPY": 15.6
+    },
+    {
+      "year": 2019,
+      "SPY": 19.3,
+      "Mom20": 19.2,
+      "RAMom20": 20.7,
+      "Mom20-SPY": -0.1
+    },
+    {
+      "year": 2020,
+      "SPY": 15.2,
+      "Mom20": 46.0,
+      "RAMom20": 30.7,
+      "Mom20-SPY": 30.8
+    },
+    {
+      "year": 2021,
+      "SPY": 21.6,
+      "Mom20": 11.8,
+      "RAMom20": 3.5,
+      "Mom20-SPY": -9.8
+    },
+    {
+      "year": 2022,
+      "SPY": -9.7,
+      "Mom20": 9.8,
+      "RAMom20": 7.6,
+      "Mom20-SPY": 19.5
+    },
+    {
+      "year": 2023,
+      "SPY": 18.9,
+      "Mom20": 15.8,
+      "RAMom20": 12.4,
+      "Mom20-SPY": -3.1
+    },
+    {
+      "year": 2024,
+      "SPY": 24.7,
+      "Mom20": 39.7,
+      "RAMom20": 25.6,
+      "Mom20-SPY": 15.0
+    },
+    {
+      "year": 2025,
+      "SPY": 14.9,
+      "Mom20": 34.7,
+      "RAMom20": 35.2,
+      "Mom20-SPY": 19.8
+    },
+    {
+      "year": 2026,
+      "SPY": 8.6,
+      "Mom20": 65.7,
+      "RAMom20": 52.5,
+      "Mom20-SPY": 57.1
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+.DS_Store
+.venv/
+venv/
+.yf_cache/
+results/cache/
+results/profile.json
+new/cache/
+new/logs/
+new/reports/
+istock/data/cache/

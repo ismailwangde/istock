@@ -1,0 +1,12 @@
+# Watchlist — edit freely. One ticker per line. Lines starting with # are ignored.
+# Add a ticker anytime and save; the logger picks it up on the next run and
+# starts recording its score/price from that day forward. Remove to stop tracking.
+#
+# The full S&P 500 is ALSO tracked automatically (for statistical power + peers).
+# Set TRACK_SP500 = False in snapshot.py if you want ONLY this list.
+
+MU      # Micron
+MRVL    # Marvell
+SNDK    # SanDisk
+WDC     # Western Digital
+PLTR    # Palantir  (interpreted from "Platier" — change if wrong)

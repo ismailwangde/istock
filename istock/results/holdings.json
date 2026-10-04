@@ -1,0 +1,77 @@
+[
+  {
+    "symbol": "MU",
+    "name": "MU",
+    "type": "Stock",
+    "market": "US",
+    "notes": "",
+    "trades": [
+      {
+        "date": "2026-05-20",
+        "qty": 0.456458,
+        "price_usd": 0.349,
+        "action": "BUY"
+      }
+    ]
+  },
+  {
+    "symbol": "SNDK",
+    "name": "SNDK",
+    "type": "Stock",
+    "market": "US",
+    "notes": "",
+    "trades": [
+      {
+        "date": "2026-05-20",
+        "qty": 0.2343,
+        "price_usd": 349.0,
+        "action": "BUY"
+      }
+    ]
+  },
+  {
+    "symbol": "ORCL",
+    "name": "ORCL",
+    "type": "Stock",
+    "market": "US",
+    "notes": "",
+    "trades": [
+      {
+        "date": "2026-05-20",
+        "qty": 0.811,
+        "price_usd": 149.5,
+        "action": "BUY"
+      }
+    ]
+  },
+  {
+    "symbol": "QQQ",
+    "name": "QQQ",
+    "type": "Stock",
+    "market": "US",
+    "notes": "",
+    "trades": [
+      {
+        "date": "2026-05-20",
+        "qty": 0.21,
+        "price_usd": 149.5,
+        "action": "BUY"
+      }
+    ]
+  },
+  {
+    "symbol": "TSM",
+    "name": "TSM",
+    "type": "Stock",
+    "market": "US",
+    "notes": "",
+    "trades": [
+      {
+        "date": "2026-05-28",
+        "qty": 0.12,
+        "price_usd": 49.85,
+        "action": "BUY"
+      }
+    ]
+  }
+]

@@ -1,0 +1,15 @@
+# istock — runtime dependencies (pinned to the versions this was built and tested on).
+# Python 3.11+ recommended.
+streamlit==1.58.0
+yfinance==1.4.1
+pandas==2.3.3
+numpy==2.4.6
+plotly==6.8.0
+altair==6.2.1
+ta==0.11.0
+
+# Used by some research/training modules (not required to run the app):
+# scikit-learn==1.9.0
+# scipy==1.17.1
+# statsmodels
+# requests

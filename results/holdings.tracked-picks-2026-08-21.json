@@ -1,0 +1,92 @@
+[
+  {
+    "symbol": "NFLX",
+    "name": "NFLX",
+    "type": "Stock",
+    "market": "US",
+    "notes": "Top-6 by istock quality score as of 2026-08-21 (no look-ahead)",
+    "trades": [
+      {
+        "date": "2026-08-21",
+        "qty": 31.410983,
+        "price_usd": 79.59,
+        "action": "BUY"
+      }
+    ]
+  },
+  {
+    "symbol": "CVX",
+    "name": "CVX",
+    "type": "Stock",
+    "market": "US",
+    "notes": "Top-6 by istock quality score as of 2026-08-21 (no look-ahead)",
+    "trades": [
+      {
+        "date": "2026-08-21",
+        "qty": 12.179081,
+        "price_usd": 205.27,
+        "action": "BUY"
+      }
+    ]
+  },
+  {
+    "symbol": "MU",
+    "name": "MU",
+    "type": "Stock",
+    "market": "US",
+    "notes": "Top-6 by istock quality score as of 2026-08-21 (no look-ahead)",
+    "trades": [
+      {
+        "date": "2026-08-21",
+        "qty": 2.585904,
+        "price_usd": 966.78,
+        "action": "BUY"
+      }
+    ]
+  },
+  {
+    "symbol": "ACN",
+    "name": "ACN",
+    "type": "Stock",
+    "market": "US",
+    "notes": "Top-6 by istock quality score as of 2026-08-21 (no look-ahead)",
+    "trades": [
+      {
+        "date": "2026-08-21",
+        "qty": 13.493092,
+        "price_usd": 185.28,
+        "action": "BUY"
+      }
+    ]
+  },
+  {
+    "symbol": "SNDK",
+    "name": "SNDK",
+    "type": "Stock",
+    "market": "US",
+    "notes": "Top-6 by istock quality score as of 2026-08-21 (no look-ahead)",
+    "trades": [
+      {
+        "date": "2026-08-21",
+        "qty": 1.566338,
+        "price_usd": 1596.08,
+        "action": "BUY"
+      }
+    ]
+  },
+  {
+    "symbol": "BE",
+    "name": "BE",
+    "type": "Stock",
+    "market": "US",
+    "notes": "Top-6 by istock quality score as of 2026-08-21 (no look-ahead)",
+    "trades": [
+      {
+        "date": "2026-08-21",
+        "qty": 12.410027,
+        "price_usd": 201.45,
+        "action": "BUY"
+      }
+    ]
+  }
+]

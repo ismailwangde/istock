@@ -1,0 +1,2328 @@
+{
+  "fold_label": "train_2023-05-11-2024-11-07_val_2024-11-08-2025-05-08_test_2025-05-09-2026-05-07",
+  "fit_at": "2026-05-18T20:47:58",
+  "n_trades_train": 12705,
+  "n_trades_val": 2985,
+  "n_trades_test": 7575,
+  "pooled": {
+    "ticker": "__POOLED__",
+    "C": 1.0,
+    "n_train": 12705,
+    "n_val": 2985,
+    "n_test": 7575,
+    "train_pf_net": 1.3807882679009775,
+    "train_wr_net": 0.6051238013453557,
+    "val_pf_net": 1.1021294743891301,
+    "val_wr_net": 0.5395377128953771,
+    "test_pf_net": 1.3200815759486335,
+    "test_pf_bootstrap_p5": 1.2445315757041524,
+    "test_pf_bootstrap_p95": 1.3971172210203542,
+    "test_wr_net": 0.5715299125088673,
+    "max_abs_coef": 1.3639592395228273,
+    "vix_stratified_pf": {
+      "low": 1.3532962111288622,
+      "mid": 1.3262376104376519,
+      "high": 0.9640932998787249
+    }
+  },
+  "per_ticker": [
+    {
+      "ticker": "AAPL",
+      "n_train": 267,
+      "n_val": 68,
+      "n_test": 163,
+      "C": 3.0,
+      "n_test_picked": 63,
+      "n_train_picked": 145,
+      "train_pf_net": 2.100686456136809,
+      "train_wr_net": 0.7310344827586207,
+      "val_pf_net": 1.0239484887648123,
+      "val_wr_net": 0.5,
+      "test_pf_net": 0.9145312187241571,
+      "test_pf_bootstrap_p5": 0.5739373477268903,
+      "test_pf_bootstrap_p95": 1.4407046085117565,
+      "test_wr_net": 0.49206349206349204,
+      "test_avg_pnl_net": -0.053820065703514594,
+      "max_abs_coef": 1.5260071131438528,
+      "vix_stratified_pf": {
+        "low": 0.8580982969547599,
+        "mid": 1.0286207817913224,
+        "high": 0.0
+      },
+      "top_3_correlated_pairs": [
+        [
+          "Setup detected: BOUNCE",
+          "Price near support",
+          0.9619240972011385
+        ],
+        [
+          "Setup detected: PULLBACK",
+          "Price near support",
+          -0.8861849448237361
+        ],
+        [
+          "Setup detected: PULLBACK",
+          "Setup detected: BOUNCE",
+          -0.852442653002816
+        ]
+      ],
+      "reason": "pf_raw_fail",
+      "status": "pooled"
+    },
+    {
+      "ticker": "ABBV",
+      "n_train": 222,
+      "n_val": 57,
+      "n_test": 134,
+      "C": 0.3,
+      "n_test_picked": 78,
+      "n_train_picked": 116,
+      "train_pf_net": 1.980515481704528,
+      "train_wr_net": 0.7068965517241379,
+      "val_pf_net": 0.8222282027578582,
+      "val_wr_net": 0.41379310344827586,
+      "test_pf_net": 1.2809194856142758,
+      "test_pf_bootstrap_p5": 0.8591194506673411,
+      "test_pf_bootstrap_p95": 1.9041409916273697,
+      "test_wr_net": 0.5897435897435898,
+      "test_avg_pnl_net": 0.1463402429394105,
+      "max_abs_coef": 0.8658533022326184,
+      "vix_stratified_pf": {
+        "low": 2.0355636132311345,
+        "mid": 0.7436148291225949,
+        "high": 0.5311045589068109
+      },
+      "top_3_correlated_pairs": [
+        [
+          "Setup detected: BOUNCE",
+          "Price near support",
+          0.9333167411831987
+        ],
+        [
+          "Setup detected: PULLBACK",
+          "Price near support",
+          -0.9302980949429824
+        ],
+        [
+          "Setup detected: PULLBACK",
+          "Setup detected: BOUNCE",
+          -0.868262786301122
+        ]
+      ],
+      "reason": "pf_raw_fail",
+      "status": "pooled"
+    },
+    {
+      "ticker": "ABT",
+      "n_train": 210,
+      "n_val": 100,
+      "n_test": 97,
+      "C": 0.3,
+      "n_test_picked": 35,
+      "n_train_picked": 109,
+      "train_pf_net": 1.9000399040780898,
+      "train_wr_net": 0.6972477064220184,
+      "val_pf_net": 1.438641643129324,
+      "val_wr_net": 0.6046511627906976,
+      "test_pf_net": 0.5561182332098848,
+      "test_pf_bootstrap_p5": 0.2691376107772746,
+      "test_pf_bootstrap_p95": 1.003866114488734,
+      "test_wr_net": 0.37142857142857144,
+      "test_avg_pnl_net": -0.40341967012433283,
+      "max_abs_coef": 0.6360170834172231,
+      "vix_stratified_pf": {
+        "low": 0.31372332662582825,
+        "mid": 0.7389313690800987,
+        "high": 0.0
+      },
+      "top_3_correlated_pairs": [
+        [
+          "Setup detected: BOUNCE",
+          "Price near support",
+          0.9712123701043124
+        ],
+        [
+          "Setup detected: PULLBACK",
+          "Price near support",
+          -0.87761154288331
+        ],
+        [
+          "Setup detected: PULLBACK",
+          "Setup detected: BOUNCE",
+          -0.8523471865946011
+        ]
+      ],
+      "reason": "pf_raw_fail",
+      "status": "pooled"
+    },
+    {
+      "ticker": "ACN",
+      "n_train": 233,
+      "n_val": 51,
+      "n_test": 61,
+      "C": 0.1,
+      "n_test_picked": 23,
+      "n_train_picked": 127,
+      "train_pf_net": 1.8531106436331632,
+      "train_wr_net": 0.7007874015748031,
+      "val_pf_net": 0.7730663528763688,
+      "val_wr_net": 0.4166666666666667,
+      "test_pf_net": 1.6576487610461939,
+      "test_pf_bootstrap_p5": 0.7849053628822398,
+      "test_pf_bootstrap_p95": 3.8148213686450645,
+      "test_wr_net": 0.6086956521739131,
+      "test_avg_pnl_net": 0.342369172769112,
+      "max_abs_coef": 0.5944761493647365,
+      "vix_stratified_pf": {
+        "low": 5.787343054782417,
+        "mid": 0.45913941038883194,
+        "high": null
+      },
+      "top_3_correlated_pairs": [
+        [
+          "Setup detected: BOUNCE",
+          "Price near support",
+          0.9827131897446049
+        ],
+        [
+          "Setup detected: PULLBACK",
+          "Price near support",
+          -0.8987523438509378
+        ],
+        [
+          "Setup detected: PULLBACK",
+          "Setup detected: BOUNCE",
+          -0.8832157826162021
+        ]
+      ],
+      "reason": "pf_bootstrap_fail",
+      "status": "pooled"
+    },
+    {
+      "ticker": "ADBE",
+      "n_train": 206,
+      "n_val": 24,
+      "n_test": 23,
+      "C": 3.0,
+      "n_test_picked": 16,
+      "n_train_picked": 96,
+      "train_pf_net": 2.4299050929083084,
+      "train_wr_net": 0.71875,
+      "val_pf_net": 0.5311321828428277,
+      "val_wr_net": 0.3333333333333333,
+      "test_pf_net": 0.5117227153348083,
+      "test_pf_bootstrap_p5": 0.18044306559346124,
+      "test_pf_bootstrap_p95": 1.2923462252973443,
+      "test_wr_net": 0.375,
+      "test_avg_pnl_net": -0.4313320292818088,
+      "max_abs_coef": 1.4549017983051067,
+      "vix_stratified_pf": {
+        "low": 0.2250568126698503,
+        "mid": 0.6272324818856903,
+        "high": Infinity
+      },
+      "top_3_correlated_pairs": [
+        [
+          "Setup detected: BOUNCE",
+          "Price near support",
+          0.990237195741238
+        ],
+        [
+          "Setup detected: PULLBACK",
+          "Price near support",
+          -0.9329863496141317
+        ],
+        [
+          "Setup detected: PULLBACK",
+          "Setup detected: BOUNCE",
+          -0.9238777865067487
+        ]
+      ],
+      "reason": "pf_raw_fail",
+      "status": "pooled"
+    },
+    {
+      "ticker": "AMD",
+      "n_train": 201,
+      "n_val": 7,
+      "n_test": 126,
+      "C": 0.1,
+      "n_test_picked": 66,
+      "n_train_picked": 102,
+      "train_pf_net": 1.6292025429228343,
+      "train_wr_net": 0.5392156862745098,
+      "val_pf_net": 0.5896410067817173,
+      "val_wr_net": 0.3333333333333333,
+      "test_pf_net": 2.053122316431237,
+      "test_pf_bootstrap_p5": 1.3032822469826837,
+      "test_pf_bootstrap_p95": 3.390888385322381,
+      "test_wr_net": 0.6212121212121212,
+      "test_avg_pnl_net": 0.6156387210596822,
+      "max_abs_coef": 0.6371624782731081,
+      "vix_stratified_pf": {
+        "low": 2.174173160301261,
+        "mid": 1.9857840107237146,
+        "high": null
+      },
+      "top_3_correlated_pairs": [
+        [
+          "Setup detected: BOUNCE",
+          "Price near support",
+          0.9780192938436492
+        ],
+        [
+          "Setup detected: PULLBACK",
+          "Price near support",
+          -0.9665953493282812
+        ],
+        [
+          "Setup detected: PULLBACK",
+          "Setup detected: BOUNCE",
+          -0.9453489009826059
+        ]
+      ],
+      "reason": "ok",
+      "status": "confident"
+    },
+    {
+      "ticker": "AMZN",
+      "n_train": 322,
+      "n_val": 79,
+      "n_test": 158,
+      "C": 0.1,
+      "n_test_picked": 95,
+      "n_train_picked": 184,
+      "train_pf_net": 1.528376770016075,
+      "train_wr_net": 0.6413043478260869,
+      "val_pf_net": 0.789153382042164,
+      "val_wr_net": 0.4444444444444444,
+      "test_pf_net": 1.0959061292061973,
+      "test_pf_bootstrap_p5": 0.7573829974637734,
+      "test_pf_bootstrap_p95": 1.5991285166224034,
+      "test_wr_net": 0.5368421052631579,
+      "test_avg_pnl_net": 0.06417957380390434,
+      "max_abs_coef": 0.5495074383075322,
+      "vix_stratified_pf": {
+        "low": 0.960092899526332,
+        "mid": 1.283313214048346,
+        "high": Infinity
+      },
+      "top_3_correlated_pairs": [
+        [
+          "Setup detected: PULLBACK",
+          "Price near support",
+          -0.9627929824060478
+        ],
+        [
+          "Setup detected: BOUNCE",
+          "Price near support",
+          0.9393753075981978
+        ],
+        [
+          "Setup detected: PULLBACK",
+          "Setup detected: BOUNCE",
+          -0.9044239540010719
+        ]
+      ],
+      "reason": "pf_raw_fail",
+      "status": "pooled"
+    },
+    {
+      "ticker": "AVGO",
+      "n_train": 284,
+      "n_val": 46,
+      "n_test": 160,
+      "C": 0.1,
+      "n_test_picked": 76,
+      "n_train_picked": 142,
+      "train_pf_net": 1.72483773213234,
+      "train_wr_net": 0.6619718309859155,
+      "val_pf_net": 1.0423889692300408,
+      "val_wr_net": 0.5263157894736842,
+      "test_pf_net": 1.7196636317586813,
+      "test_pf_bootstrap_p5": 1.1394419336434072,
+      "test_pf_bootstrap_p95": 2.843130891508051,
+      "test_wr_net": 0.6052631578947368,
+      "test_avg_pnl_net": 0.44446874841488804,
+      "max_abs_coef": 0.39579422320705454,
+      "vix_stratified_pf": {
+        "low": 1.5155685928485927,
+        "mid": 2.263497375709147,
+        "high": 0.2581662102647649
+      },
+      "top_3_correlated_pairs": [
+        [
+          "Setup detected: BOUNCE",
+          "Price near support",
+          0.9722222222222185
+        ],
+        [
+          "Setup detected: PULLBACK",
+          "Price near support",
+          -0.9585703640615749
+        ],
+        [
+          "Setup detected: PULLBACK",
+          "Setup detected: BOUNCE",
+          -0.9319434095043094
+        ]
+      ],
+      "reason": "pf_bootstrap_fail",
+      "status": "pooled"
+    },
+    {
+      "ticker": "BAC",
+      "n_train": 234,
+      "n_val": 58,
+      "n_test": 162,
+      "C": 10.0,
+      "n_test_picked": 107,
+      "n_train_picked": 114,
+      "train_pf_net": 2.234332162879673,
+      "train_wr_net": 0.7368421052631579,
+      "val_pf_net": 0.57566202659832,
+      "val_wr_net": 0.42857142857142855,
+      "test_pf_net": 1.3024000341702846,
+      "test_pf_bootstrap_p5": 0.9067713083713779,
+      "test_pf_bootstrap_p95": 1.8814803221225225,
+      "test_wr_net": 0.6074766355140186,
+      "test_avg_pnl_net": 0.16590303089729566,
+      "max_abs_coef": 2.45275814935228,
+      "vix_stratified_pf": {
+        "low": 1.81622456242638,
+        "mid": 0.9425430243615864,
+        "high": null
+      },
+      "top_3_correlated_pairs": [
+        [
+          "Setup detected: BOUNCE",
+          "Price near support",
+          0.9576061324439735
+        ],
+        [
+          "Setup detected: PULLBACK",
+          "Price near support",
+          -0.9319595253997647
+        ],
+        [
+          "Setup detected: PULLBACK",
+          "Setup detected: BOUNCE",
+          -0.8924501567123956
+        ]
+      ],
+      "reason": "pf_raw_fail",
+      "status": "pooled"
+    },
+    {
+      "ticker": "BE",
+      "n_train": 83,
+      "n_val": 39,
+      "n_test": 89,
+      "C": 0.1,
+      "n_test_picked": 29,
+      "n_train_picked": 35,
+      "train_pf_net": 3.055003588240074,
+      "train_wr_net": 0.6857142857142857,
+      "val_pf_net": 0.49847959759932015,
+      "val_wr_net": 0.3125,
+      "test_pf_net": 1.381423487826105,
+      "test_pf_bootstrap_p5": 0.6903982520380394,
+      "test_pf_bootstrap_p95": 2.753600024236384,
+      "test_wr_net": 0.4827586206896552,
+      "test_avg_pnl_net": 0.40040561321536966,
+      "max_abs_coef": 0.27424839136588797,
+      "vix_stratified_pf": {
+        "low": 2.4214010840800433,
+        "mid": 0.6493222016632062,
+        "high": null
+      },
+      "top_3_correlated_pairs": [
+        [
+          "Setup detected: BOUNCE",
+          "Price near support",
+          0.9714570569815839
+        ],
+        [
+          "Setup detected: PULLBACK",
+          "Price near support",
+          -0.970752857894896
+        ],
+        [
+          "Setup detected: PULLBACK",
+          "Setup detected: BOUNCE",
+          -0.94304471438704
+        ]
+      ],
+      "reason": "pf_raw_fail",
+      "status": "pooled"
+    },
+    {
+      "ticker": "BRK-B",
+      "n_train": 324,
+      "n_val": 109,
+      "n_test": 118,
+      "C": 1.0,
+      "n_test_picked": 64,
+      "n_train_picked": 173,
+      "train_pf_net": 2.953515732285993,
+      "train_wr_net": 0.7976878612716763,
+      "val_pf_net": 1.143299425238955,
+      "val_wr_net": 0.5942028985507246,
+      "test_pf_net": 0.41842056100116276,
+      "test_pf_bootstrap_p5": 0.2638421139596431,
+      "test_pf_bootstrap_p95": 0.6693636856933415,
+      "test_wr_net": 0.34375,
+      "test_avg_pnl_net": -0.43034491621931337,
+      "max_abs_coef": 1.679773183446702,
+      "vix_stratified_pf": {
+        "low": 0.33861288611599966,
+        "mid": 0.5310105083689659,
+        "high": 0.0
+      },
+      "top_3_correlated_pairs": [
+        [
+          "Setup detected: BOUNCE",
+          "Price near support",
+          0.9815886371253392
+        ],
+        [
+          "Setup detected: PULLBACK",
+          "Price near support",
+          -0.963367661051958
+        ],
+        [
+          "Setup detected: PULLBACK",
+          "Setup detected: BOUNCE",
+          -0.9456307494626256
+        ]
+      ],
+      "reason": "pf_raw_fail",
+      "status": "pooled"
+    },
+    {
+      "ticker": "CAT",
+      "n_train": 257,
+      "n_val": 34,
+      "n_test": 200,
+      "C": 1.0,
+      "n_test_picked": 77,
+      "n_train_picked": 136,
+      "train_pf_net": 2.0939374906351667,
+      "train_wr_net": 0.7279411764705882,
+      "val_pf_net": 1.7255356690713146,
+      "val_wr_net": 0.65,
+      "test_pf_net": 1.8351275987888662,
+      "test_pf_bootstrap_p5": 1.2258714552333383,
+      "test_pf_bootstrap_p95": 2.849170802100456,
+      "test_wr_net": 0.6493506493506493,
+      "test_avg_pnl_net": 0.40125293148589575,
+      "max_abs_coef": 1.5449576334102035,
+      "vix_stratified_pf": {
+        "low": 1.6107486210800734,
+        "mid": 2.1328895108912906,
+        "high": Infinity
+      },
+      "top_3_correlated_pairs": [
+        [
+          "Setup detected: BOUNCE",
+          "Price near support",
+          0.9767223923174588
+        ],
+        [
+          "Setup detected: PULLBACK",
+          "Price near support",
+          -0.9616863393605153
+        ],
+        [
+          "Setup detected: PULLBACK",
+          "Setup detected: BOUNCE",
+          -0.9393005820392134
+        ]
+      ],
+      "reason": "ok",
+      "status": "confident"
+    },
+    {
+      "ticker": "COST",
+      "n_train": 302,
+      "n_val": 87,
+      "n_test": 110,
+      "C": 10.0,
+      "n_test_picked": 56,
+      "n_train_picked": 166,
+      "train_pf_net": 3.321389886823095,
+      "train_wr_net": 0.8072289156626506,
+      "val_pf_net": 1.1203461233116765,
+      "val_wr_net": 0.5666666666666667,
+      "test_pf_net": 0.4232796930864283,
+      "test_pf_bootstrap_p5": 0.24244021284228792,
+      "test_pf_bootstrap_p95": 0.7023915022049397,
+      "test_wr_net": 0.375,
+      "test_avg_pnl_net": -0.5007886217905068,
+      "max_abs_coef": 2.4909860692789914,
+      "vix_stratified_pf": {
+        "low": 0.4562274892267345,
+        "mid": 0.45850372679339896,
+        "high": 0.2685869612384335
+      },
+      "top_3_correlated_pairs": [
+        [
+          "Setup detected: BOUNCE",
+          "Price near support",
+          0.9722091146525106
+        ],
+        [
+          "Setup detected: PULLBACK",
+          "Price near support",
+          -0.9027463544053556
+        ],
+        [
+          "Setup detected: PULLBACK",
+          "Setup detected: BOUNCE",
+          -0.8776582339722164
+        ]
+      ],
+      "reason": "pf_raw_fail",
+      "status": "pooled"
+    },
+    {
+      "ticker": "CRM",
+      "n_train": 236,
+      "n_val": 68,
+      "n_test": 59,
+      "C": 1.0,
+      "n_test_picked": 24,
+      "n_train_picked": 105,
+      "train_pf_net": 2.7064551879766006,
+      "train_wr_net": 0.7238095238095238,
+      "val_pf_net": 1.3203718677612926,
+      "val_wr_net": 0.5172413793103449,
+      "test_pf_net": 0.8027010352592122,
+      "test_pf_bootstrap_p5": 0.34357373565352944,
+      "test_pf_bootstrap_p95": 1.809370113053833,
+      "test_wr_net": 0.4583333333333333,
+      "test_avg_pnl_net": -0.14621718692735766,
+      "max_abs_coef": 1.1805777210065365,
+      "vix_stratified_pf": {
+        "low": 2.2303397004432526,
+        "mid": 0.30518670125075054,
+        "high": 0.4793801323613973
+      },
+      "top_3_correlated_pairs": [
+        [
+          "Setup detected: BOUNCE",
+          "Price near support",
+          0.9582942117297664
+        ],
+        [
+          "Setup detected: PULLBACK",
+          "Price near support",
+          -0.8804598516792762
+        ],
+        [
+          "Setup detected: PULLBACK",
+          "Setup detected: BOUNCE",
+          -0.8437395795246988
+        ]
+      ],
+      "reason": "pf_raw_fail",
+      "status": "pooled"
+    },
+    {
+      "ticker": "CSCO",
+      "n_train": 196,
+      "n_val": 89,
+      "n_test": 204,
+      "C": 10.0,
+      "n_test_picked": 104,
+      "n_train_picked": 108,
+      "train_pf_net": 1.7081711707679545,
+      "train_wr_net": 0.6944444444444444,
+      "val_pf_net": 1.460896597016631,
+      "val_wr_net": 0.6379310344827587,
+      "test_pf_net": 1.2741365723600604,
+      "test_pf_bootstrap_p5": 0.8922347890891866,
+      "test_pf_bootstrap_p95": 1.8322975435944069,
+      "test_wr_net": 0.5769230769230769,
+      "test_avg_pnl_net": 0.16702311012577095,
+      "max_abs_coef": 1.5350111231604975,
+      "vix_stratified_pf": {
+        "low": 0.5293883718685118,
+        "mid": 2.2702779279815775,
+        "high": 1.821758281738651
+      },
+      "top_3_correlated_pairs": [
+        [
+          "Setup detected: BOUNCE",
+          "Price near support",
+          0.9895150628463616
+        ],
+        [
+          "Setup detected: PULLBACK",
+          "Price near support",
+          -0.8975274678557547
+        ],
+        [
+          "Setup detected: PULLBACK",
+          "Setup detected: BOUNCE",
+          -0.8881169487616182
+        ]
+      ],
+      "reason": "pf_raw_fail",
+      "status": "pooled"
+    },
+    {
+      "ticker": "CVX",
+      "n_train": 161,
+      "n_val": 38,
+      "n_test": 154,
+      "C": 10.0,
+      "n_test_picked": 66,
+      "n_train_picked": 77,
+      "train_pf_net": 1.537538100413274,
+      "train_wr_net": 0.6623376623376623,
+      "val_pf_net": 0.5758109148826022,
+      "val_wr_net": 0.38461538461538464,
+      "test_pf_net": 1.1402224367414373,
+      "test_pf_bootstrap_p5": 0.7374112037503862,
+      "test_pf_bootstrap_p95": 1.7743780031487428,
+      "test_wr_net": 0.5303030303030303,
+      "test_avg_pnl_net": 0.07733048545424777,
+      "max_abs_coef": 3.032237680999968,
+      "vix_stratified_pf": {
+        "low": 1.2303599518132315,
+        "mid": 1.0470759425139788,
+        "high": 1.0270685830835455
+      },
+      "top_3_correlated_pairs": [
+        [
+          "Setup detected: PULLBACK",
+          "Price near support",
+          -0.9363146100641666
+        ],
+        [
+          "Setup detected: BOUNCE",
+          "Price near support",
+          0.914526301602916
+        ],
+        [
+          "Setup detected: PULLBACK",
+          "Setup detected: BOUNCE",
+          -0.8562843374787565
+        ]
+      ],
+      "reason": "pf_raw_fail",
+      "status": "pooled"
+    },
+    {
+      "ticker": "DHR",
+      "n_train": 214,
+      "n_val": 18,
+      "n_test": 112,
+      "C": 0.1,
+      "n_test_picked": 69,
+      "n_train_picked": 117,
+      "train_pf_net": 1.6012250597228634,
+      "train_wr_net": 0.6666666666666666,
+      "val_pf_net": 1.5511933425383522,
+      "val_wr_net": 0.625,
+      "test_pf_net": 0.6802015672721887,
+      "test_pf_bootstrap_p5": 0.4244454809258632,
+      "test_pf_bootstrap_p95": 1.019258083181277,
+      "test_wr_net": 0.42028985507246375,
+      "test_avg_pnl_net": -0.2429254072348673,
+      "max_abs_coef": 0.33024442894727435,
+      "vix_stratified_pf": {
+        "low": 0.6617256560114864,
+        "mid": 0.6980983391732335,
+        "high": null
+      },
+      "top_3_correlated_pairs": [
+        [
+          "Setup detected: BOUNCE",
+          "Price near support",
+          0.9814236060242483
+        ],
+        [
+          "Setup detected: PULLBACK",
+          "Price near support",
+          -0.97232101862775
+        ],
+        [
+          "Setup detected: PULLBACK",
+          "Setup detected: BOUNCE",
+          -0.9542588003148212
+        ]
+      ],
+      "reason": "pf_raw_fail",
+      "status": "pooled"
+    },
+    {
+      "ticker": "FANUY",
+      "n_train": 133,
+      "n_val": 34,
+      "n_test": 155,
+      "reason": "val_wr_fail",
+      "status": "pooled"
+    },
+    {
+      "ticker": "GOOGL",
+      "n_train": 310,
+      "n_val": 63,
+      "n_test": 183,
+      "C": 0.3,
+      "n_test_picked": 103,
+      "n_train_picked": 159,
+      "train_pf_net": 2.1031956996188095,
+      "train_wr_net": 0.6855345911949685,
+      "val_pf_net": 2.5129386883947182,
+      "val_wr_net": 0.6071428571428571,
+      "test_pf_net": 1.513844426594969,
+      "test_pf_bootstrap_p5": 1.0266939138680211,
+      "test_pf_bootstrap_p95": 2.2445902772993422,
+      "test_wr_net": 0.6213592233009708,
+      "test_avg_pnl_net": 0.2939741853903457,
+      "max_abs_coef": 0.7204475084693529,
+      "vix_stratified_pf": {
+        "low": 1.4472064973167031,
+        "mid": 1.7148938867913366,
+        "high": 0.7316060203117386
+      },
+      "top_3_correlated_pairs": [
+        [
+          "Setup detected: PULLBACK",
+          "Price near support",
+          -0.9678958461308579
+        ],
+        [
+          "Setup detected: BOUNCE",
+          "Price near support",
+          0.9556367740992774
+        ],
+        [
+          "Setup detected: PULLBACK",
+          "Setup detected: BOUNCE",
+          -0.9249568640605841
+        ]
+      ],
+      "reason": "pf_bootstrap_fail",
+      "status": "pooled"
+    },
+    {
+      "ticker": "GS",
+      "n_train": 250,
+      "n_val": 80,
+      "n_test": 183,
+      "C": 0.3,
+      "n_test_picked": 95,
+      "n_train_picked": 133,
+      "train_pf_net": 2.7680149076730824,
+      "train_wr_net": 0.7368421052631579,
+      "val_pf_net": 1.0402159381940843,
+      "val_wr_net": 0.4857142857142857,
+      "test_pf_net": 1.6494670428838487,
+      "test_pf_bootstrap_p5": 1.1256883316419064,
+      "test_pf_bootstrap_p95": 2.4962550654315905,
+      "test_wr_net": 0.6105263157894737,
+      "test_avg_pnl_net": 0.33396398293173096,
+      "max_abs_coef": 0.6518797923464623,
+      "vix_stratified_pf": {
+        "low": 2.2304427291121494,
+        "mid": 1.1285883007688855,
+        "high": Infinity
+      },
+      "top_3_correlated_pairs": [
+        [
+          "Setup detected: BOUNCE",
+          "Price near support",
+          0.9685019523707947
+        ],
+        [
+          "Setup detected: PULLBACK",
+          "Price near support",
+          -0.9378880997359923
+        ],
+        [
+          "Setup detected: PULLBACK",
+          "Setup detected: BOUNCE",
+          -0.9083464556996363
+        ]
+      ],
+      "reason": "pf_bootstrap_fail",
+      "status": "pooled"
+    },
+    {
+      "ticker": "HD",
+      "n_train": 245,
+      "n_val": 56,
+      "n_test": 118,
+      "C": 0.1,
+      "n_test_picked": 87,
+      "n_train_picked": 130,
+      "train_pf_net": 1.901479707053329,
+      "train_wr_net": 0.7076923076923077,
+      "val_pf_net": 2.0033541526506933,
+      "val_wr_net": 0.7,
+      "test_pf_net": 0.43615119492229765,
+      "test_pf_bootstrap_p5": 0.2769139126529684,
+      "test_pf_bootstrap_p95": 0.6614097398413716,
+      "test_wr_net": 0.3218390804597701,
+      "test_avg_pnl_net": -0.49043033881745834,
+      "max_abs_coef": 0.7010014949480767,
+      "vix_stratified_pf": {
+        "low": 0.44224670214745115,
+        "mid": 0.4261663638471053,
+        "high": null
+      },
+      "top_3_correlated_pairs": [
+        [
+          "Setup detected: BOUNCE",
+          "Price near support",
+          0.9837732203345574
+        ],
+        [
+          "Setup detected: PULLBACK",
+          "Price near support",
+          -0.913264323259118
+        ],
+        [
+          "Setup detected: PULLBACK",
+          "Setup detected: BOUNCE",
+          -0.8984449843092831
+        ]
+      ],
+      "reason": "pf_raw_fail",
+      "status": "pooled"
+    },
+    {
+      "ticker": "HON",
+      "n_train": 209,
+      "n_val": 51,
+      "n_test": 136,
+      "C": 0.1,
+      "n_test_picked": 86,
+      "n_train_picked": 116,
+      "train_pf_net": 2.51931786724154,
+      "train_wr_net": 0.75,
+      "val_pf_net": 1.079968463664323,
+      "val_wr_net": 0.5476190476190477,
+      "test_pf_net": 0.8904734716159933,
+      "test_pf_bootstrap_p5": 0.6078611873810376,
+      "test_pf_bootstrap_p95": 1.2849880590083023,
+      "test_wr_net": 0.5,
+      "test_avg_pnl_net": -0.06780943553237076,
+      "max_abs_coef": 0.4658839168534866,
+      "vix_stratified_pf": {
+        "low": 0.780014618932302,
+        "mid": 1.090942115972423,
+        "high": 0.3860243166178157
+      },
+      "top_3_correlated_pairs": [
+        [
+          "Setup detected: BOUNCE",
+          "Price near support",
+          0.9433981132056593
+        ],
+        [
+          "Setup detected: PULLBACK",
+          "Price near support",
+          -0.9424306313554661
+        ],
+        [
+          "Setup detected: PULLBACK",
+          "Setup detected: BOUNCE",
+          -0.8890872794479663
+        ]
+      ],
+      "reason": "pf_raw_fail",
+      "status": "pooled"
+    },
+    {
+      "ticker": "IBM",
+      "n_train": 278,
+      "n_val": 97,
+      "n_test": 138,
+      "C": 0.1,
+      "n_test_picked": 78,
+      "n_train_picked": 150,
+      "train_pf_net": 3.327505021746171,
+      "train_wr_net": 0.7866666666666666,
+      "val_pf_net": 1.7215820400912825,
+      "val_wr_net": 0.6326530612244898,
+      "test_pf_net": 1.6033079223429925,
+      "test_pf_bootstrap_p5": 1.0929378928858073,
+      "test_pf_bootstrap_p95": 2.461062257864275,
+      "test_wr_net": 0.6025641025641025,
+      "test_avg_pnl_net": 0.28586646368127666,
+      "max_abs_coef": 0.7321987514074223,
+      "vix_stratified_pf": {
+        "low": 1.5327665304948768,
+        "mid": 1.712497830597305,
+        "high": null
+      },
+      "top_3_correlated_pairs": [
+        [
+          "Setup detected: BOUNCE",
+          "Price near support",
+          0.9855689291994008
+        ],
+        [
+          "Setup detected: PULLBACK",
+          "Price near support",
+          -0.9085582403488817
+        ],
+        [
+          "Setup detected: PULLBACK",
+          "Setup detected: BOUNCE",
+          -0.8954467720559399
+        ]
+      ],
+      "reason": "pf_bootstrap_fail",
+      "status": "pooled"
+    },
+    {
+      "ticker": "INTC",
+      "n_train": 189,
+      "n_val": 27,
+      "n_test": 131,
+      "reason": "val_wr_fail",
+      "status": "pooled"
+    },
+    {
+      "ticker": "JNJ",
+      "n_train": 153,
+      "n_val": 51,
+      "n_test": 159,
+      "C": 0.1,
+      "n_test_picked": 98,
+      "n_train_picked": 79,
+      "train_pf_net": 1.5776444576542488,
+      "train_wr_net": 0.6582278481012658,
+      "val_pf_net": 1.3381811594860482,
+      "val_wr_net": 0.5862068965517241,
+      "test_pf_net": 0.9458172480026155,
+      "test_pf_bootstrap_p5": 0.6767167828205694,
+      "test_pf_bootstrap_p95": 1.3316641575585768,
+      "test_wr_net": 0.5,
+      "test_avg_pnl_net": -0.03367944768447111,
+      "max_abs_coef": 0.3391237367849554,
+      "vix_stratified_pf": {
+        "low": 0.7969471769944486,
+        "mid": 1.0620217746717437,
+        "high": 1.5360346911032827
+      },
+      "top_3_correlated_pairs": [
+        [
+          "Setup detected: PULLBACK",
+          "Price near support",
+          -0.9734948935111598
+        ],
+        [
+          "Setup detected: BOUNCE",
+          "Price near support",
+          0.9358481117743858
+        ],
+        [
+          "Setup detected: PULLBACK",
+          "Setup detected: BOUNCE",
+          -0.9110433579144277
+        ]
+      ],
+      "reason": "pf_raw_fail",
+      "status": "pooled"
+    },
+    {
+      "ticker": "JPM",
+      "n_train": 293,
+      "n_val": 93,
+      "n_test": 171,
+      "C": 0.1,
+      "n_test_picked": 74,
+      "n_train_picked": 151,
+      "train_pf_net": 2.1952471804872147,
+      "train_wr_net": 0.7350993377483444,
+      "val_pf_net": 1.0161578345239313,
+      "val_wr_net": 0.5757575757575758,
+      "test_pf_net": 1.557226640133191,
+      "test_pf_bootstrap_p5": 1.0227352125313278,
+      "test_pf_bootstrap_p95": 2.4317452266351247,
+      "test_wr_net": 0.6351351351351351,
+      "test_avg_pnl_net": 0.245701922318161,
+      "max_abs_coef": 0.4034201189721018,
+      "vix_stratified_pf": {
+        "low": 2.6344894002398482,
+        "mid": 1.111322083067012,
+        "high": null
+      },
+      "top_3_correlated_pairs": [
+        [
+          "Setup detected: BOUNCE",
+          "Price near support",
+          0.9527829556340014
+        ],
+        [
+          "Setup detected: PULLBACK",
+          "Price near support",
+          -0.9321563888562935
+        ],
+        [
+          "Setup detected: PULLBACK",
+          "Setup detected: BOUNCE",
+          -0.8881427192876229
+        ]
+      ],
+      "reason": "pf_bootstrap_fail",
+      "status": "pooled"
+    },
+    {
+      "ticker": "KO",
+      "n_train": 215,
+      "n_val": 66,
+      "n_test": 160,
+      "C": 10.0,
+      "n_test_picked": 73,
+      "n_train_picked": 110,
+      "train_pf_net": 2.2690903695661295,
+      "train_wr_net": 0.7363636363636363,
+      "val_pf_net": 1.343618570580895,
+      "val_wr_net": 0.5897435897435898,
+      "test_pf_net": 1.17811624706264,
+      "test_pf_bootstrap_p5": 0.7920207203637438,
+      "test_pf_bootstrap_p95": 1.7646344649466303,
+      "test_wr_net": 0.5753424657534246,
+      "test_avg_pnl_net": 0.10189756933967678,
+      "max_abs_coef": 3.934527264304909,
+      "vix_stratified_pf": {
+        "low": 0.6968042686952864,
+        "mid": 1.7778150069195302,
+        "high": 0.7390509928124351
+      },
+      "top_3_correlated_pairs": [
+        [
+          "Setup detected: PULLBACK",
+          "Price near support",
+          -0.9813553990496909
+        ],
+        [
+          "Setup detected: BOUNCE",
+          "Price near support",
+          0.9542979685759513
+        ],
+        [
+          "Setup detected: PULLBACK",
+          "Setup detected: BOUNCE",
+          -0.9365054637641632
+        ]
+      ],
+      "reason": "pf_raw_fail",
+      "status": "pooled"
+    },
+    {
+      "ticker": "LIN",
+      "n_train": 249,
+      "n_val": 61,
+      "n_test": 166,
+      "C": 0.3,
+      "n_test_picked": 92,
+      "n_train_picked": 122,
+      "train_pf_net": 1.2738998968365465,
+      "train_wr_net": 0.6229508196721312,
+      "val_pf_net": 0.9602461896984096,
+      "val_wr_net": 0.5641025641025641,
+      "test_pf_net": 1.0459112956001841,
+      "test_pf_bootstrap_p5": 0.716635987833581,
+      "test_pf_bootstrap_p95": 1.4945015072570842,
+      "test_wr_net": 0.5108695652173914,
+      "test_avg_pnl_net": 0.024145675163408018,
+      "max_abs_coef": 0.6623232707950799,
+      "vix_stratified_pf": {
+        "low": 1.855133127260859,
+        "mid": 0.8149597208496958,
+        "high": 0.6197379647249189
+      },
+      "top_3_correlated_pairs": [
+        [
+          "Setup detected: BOUNCE",
+          "Price near support",
+          0.9919994859024464
+        ],
+        [
+          "Setup detected: PULLBACK",
+          "Price near support",
+          -0.9300756154240871
+        ],
+        [
+          "Setup detected: PULLBACK",
+          "Setup detected: BOUNCE",
+          -0.9226345323511046
+        ]
+      ],
+      "reason": "pf_raw_fail",
+      "status": "pooled"
+    },
+    {
+      "ticker": "LLY",
+      "n_train": 265,
+      "n_val": 32,
+      "n_test": 103,
+      "C": 0.1,
+      "n_test_picked": 53,
+      "n_train_picked": 137,
+      "train_pf_net": 1.6202691479947209,
+      "train_wr_net": 0.6496350364963503,
+      "val_pf_net": 1.1077283437768315,
+      "val_wr_net": 0.5652173913043478,
+      "test_pf_net": 0.79917293336077,
+      "test_pf_bootstrap_p5": 0.4618958689084931,
+      "test_pf_bootstrap_p95": 1.3487737194275244,
+      "test_wr_net": 0.41509433962264153,
+      "test_avg_pnl_net": -0.14304071481951844,
+      "max_abs_coef": 0.5393168487649765,
+      "vix_stratified_pf": {
+        "low": 0.6063823623979292,
+        "mid": 1.0067919455694874,
+        "high": null
+      },
+      "top_3_correlated_pairs": [
+        [
+          "Setup detected: BOUNCE",
+          "Price near support",
+          0.9924292196020058
+        ],
+        [
+          "Setup detected: PULLBACK",
+          "Price near support",
+          -0.9341758760217779
+        ],
+        [
+          "Setup detected: PULLBACK",
+          "Setup detected: BOUNCE",
+          -0.9271034356113227
+        ]
+      ],
+      "reason": "pf_raw_fail",
+      "status": "pooled"
+    },
+    {
+      "ticker": "MA",
+      "n_train": 293,
+      "n_val": 83,
+      "n_test": 105,
+      "C": 0.3,
+      "n_test_picked": 60,
+      "n_train_picked": 149,
+      "train_pf_net": 1.545086358232596,
+      "train_wr_net": 0.6644295302013423,
+      "val_pf_net": 0.47343808818741406,
+      "val_wr_net": 0.3939393939393939,
+      "test_pf_net": 0.9909432229065928,
+      "test_pf_bootstrap_p5": 0.6472664092514389,
+      "test_pf_bootstrap_p95": 1.5431100203545534,
+      "test_wr_net": 0.6,
+      "test_avg_pnl_net": -0.005392305352708926,
+      "max_abs_coef": 0.7981881819389902,
+      "vix_stratified_pf": {
+        "low": 0.8691495614347329,
+        "mid": 1.255935976074814,
+        "high": null
+      },
+      "top_3_correlated_pairs": [
+        [
+          "Setup detected: BOUNCE",
+          "Price near support",
+          0.9382051556141611
+        ],
+        [
+          "Setup detected: PULLBACK",
+          "Price near support",
+          -0.91570901988209
+        ],
+        [
+          "Setup detected: PULLBACK",
+          "Setup detected: BOUNCE",
+          -0.8591229234957606
+        ]
+      ],
+      "reason": "pf_raw_fail",
+      "status": "pooled"
+    },
+    {
+      "ticker": "MCD",
+      "n_train": 182,
+      "n_val": 81,
+      "n_test": 132,
+      "C": 0.3,
+      "n_test_picked": 66,
+      "n_train_picked": 89,
+      "train_pf_net": 2.9257381583428095,
+      "train_wr_net": 0.7528089887640449,
+      "val_pf_net": 0.46193831855155804,
+      "val_wr_net": 0.3103448275862069,
+      "test_pf_net": 0.4825577241276863,
+      "test_pf_bootstrap_p5": 0.30458949021764326,
+      "test_pf_bootstrap_p95": 0.7737992779058358,
+      "test_wr_net": 0.3787878787878788,
+      "test_avg_pnl_net": -0.4240296459329459,
+      "max_abs_coef": 0.7141705937796207,
+      "vix_stratified_pf": {
+        "low": 0.5142051508557787,
+        "mid": 0.6481228071374584,
+        "high": 0.08998085425849771
+      },
+      "top_3_correlated_pairs": [
+        [
+          "Setup detected: BOUNCE",
+          "Price near support",
+          0.9417090423257151
+        ],
+        [
+          "Setup detected: PULLBACK",
+          "Price near support",
+          -0.9274777915203383
+        ],
+        [
+          "Setup detected: PULLBACK",
+          "Setup detected: BOUNCE",
+          -0.8734142228309872
+        ]
+      ],
+      "reason": "pf_raw_fail",
+      "status": "pooled"
+    },
+    {
+      "ticker": "META",
+      "n_train": 310,
+      "n_val": 81,
+      "n_test": 132,
+      "C": 0.1,
+      "n_test_picked": 57,
+      "n_train_picked": 152,
+      "train_pf_net": 1.907870908119581,
+      "train_wr_net": 0.7105263157894737,
+      "val_pf_net": 2.359019793288016,
+      "val_wr_net": 0.6818181818181818,
+      "test_pf_net": 0.7843178904667639,
+      "test_pf_bootstrap_p5": 0.4704479571640838,
+      "test_pf_bootstrap_p95": 1.2594883470073313,
+      "test_wr_net": 0.49122807017543857,
+      "test_avg_pnl_net": -0.16755626654472397,
+      "max_abs_coef": 0.29488511065734935,
+      "vix_stratified_pf": {
+        "low": 0.9792591389970262,
+        "mid": 0.6723449248723445,
+        "high": null
+      },
+      "top_3_correlated_pairs": [
+        [
+          "Setup detected: BOUNCE",
+          "Price near support",
+          0.9871794871794851
+        ],
+        [
+          "Setup detected: PULLBACK",
+          "Price near support",
+          -0.9313474330563931
+        ],
+        [
+          "Setup detected: PULLBACK",
+          "Setup detected: BOUNCE",
+          -0.9194070813505426
+        ]
+      ],
+      "reason": "pf_raw_fail",
+      "status": "pooled"
+    },
+    {
+      "ticker": "MRK",
+      "n_train": 188,
+      "n_val": 12,
+      "n_test": 158,
+      "C": 0.3,
+      "n_test_picked": 73,
+      "n_train_picked": 95,
+      "train_pf_net": 2.0232063500275257,
+      "train_wr_net": 0.6736842105263158,
+      "val_pf_net": 2.735387970749192,
+      "val_wr_net": 0.6666666666666666,
+      "test_pf_net": 0.684528298314999,
+      "test_pf_bootstrap_p5": 0.43900916601770634,
+      "test_pf_bootstrap_p95": 1.07897304128209,
+      "test_wr_net": 0.4383561643835616,
+      "test_avg_pnl_net": -0.2430349221482214,
+      "max_abs_coef": 0.7670917259298435,
+      "vix_stratified_pf": {
+        "low": 0.5735941509455427,
+        "mid": 0.582849690224252,
+        "high": 1.8366907696757984
+      },
+      "top_3_correlated_pairs": [
+        [
+          "Setup detected: BOUNCE",
+          "Price near support",
+          0.965695681470568
+        ],
+        [
+          "Setup detected: PULLBACK",
+          "Price near support",
+          -0.9533644081517115
+        ],
+        [
+          "Setup detected: PULLBACK",
+          "Setup detected: BOUNCE",
+          -0.920659891819854
+        ]
+      ],
+      "reason": "pf_raw_fail",
+      "status": "pooled"
+    },
+    {
+      "ticker": "MSFT",
+      "n_train": 285,
+      "n_val": 33,
+      "n_test": 136,
+      "C": 1.0,
+      "n_test_picked": 83,
+      "n_train_picked": 161,
+      "train_pf_net": 2.1973266893021877,
+      "train_wr_net": 0.7142857142857143,
+      "val_pf_net": 0.7605863529820357,
+      "val_wr_net": 0.5263157894736842,
+      "test_pf_net": 1.2658579733350714,
+      "test_pf_bootstrap_p5": 0.8548543828165507,
+      "test_pf_bootstrap_p95": 1.866054863415681,
+      "test_wr_net": 0.5662650602409639,
+      "test_avg_pnl_net": 0.13856205075146177,
+      "max_abs_coef": 2.0261561843902802,
+      "vix_stratified_pf": {
+        "low": 1.3666492371696115,
+        "mid": 1.2793701061154985,
+        "high": 0.0
+      },
+      "top_3_correlated_pairs": [
+        [
+          "Setup detected: BOUNCE",
+          "Price near support",
+          0.9447562225490964
+        ],
+        [
+          "Setup detected: PULLBACK",
+          "Price near support",
+          -0.9370425713316357
+        ],
+        [
+          "Setup detected: PULLBACK",
+          "Setup detected: BOUNCE",
+          -0.8852768000589717
+        ]
+      ],
+      "reason": "pf_raw_fail",
+      "status": "pooled"
+    },
+    {
+      "ticker": "MU",
+      "n_train": 264,
+      "n_val": 9,
+      "n_test": 140,
+      "C": 0.1,
+      "n_test_picked": 101,
+      "n_train_picked": 134,
+      "train_pf_net": 1.6434684977582334,
+      "train_wr_net": 0.5671641791044776,
+      "val_pf_net": 0.49309507037768235,
+      "val_wr_net": 0.2857142857142857,
+      "test_pf_net": 2.0978003867233173,
+      "test_pf_bootstrap_p5": 1.4581526148865114,
+      "test_pf_bootstrap_p95": 3.1199655603762033,
+      "test_wr_net": 0.6138613861386139,
+      "test_avg_pnl_net": 0.7575773777964951,
+      "max_abs_coef": 0.43791266915046567,
+      "vix_stratified_pf": {
+        "low": 2.373907318581932,
+        "mid": 2.0824269300614433,
+        "high": 0.9846813985576782
+      },
+      "top_3_correlated_pairs": [
+        [
+          "Setup detected: BOUNCE",
+          "Price near support",
+          0.984920315157969
+        ],
+        [
+          "Setup detected: PULLBACK",
+          "Price near support",
+          -0.9848926998247608
+        ],
+        [
+          "Setup detected: PULLBACK",
+          "Setup detected: BOUNCE",
+          -0.970040828308187
+        ]
+      ],
+      "reason": "ok",
+      "status": "confident"
+    },
+    {
+      "ticker": "NEE",
+      "n_train": 169,
+      "n_val": 34,
+      "n_test": 172,
+      "C": 0.1,
+      "n_test_picked": 92,
+      "n_train_picked": 92,
+      "train_pf_net": 2.2928509702095066,
+      "train_wr_net": 0.717391304347826,
+      "val_pf_net": 0.7424627653441469,
+      "val_wr_net": 0.4,
+      "test_pf_net": 1.073042764751997,
+      "test_pf_bootstrap_p5": 0.7478736892610254,
+      "test_pf_bootstrap_p95": 1.5441842627713949,
+      "test_wr_net": 0.5434782608695652,
+      "test_avg_pnl_net": 0.04165818485199217,
+      "max_abs_coef": 0.3069308476733603,
+      "vix_stratified_pf": {
+        "low": 0.6926644566657629,
+        "mid": 1.1380495582485184,
+        "high": 2.8143990693527927
+      },
+      "top_3_correlated_pairs": [
+        [
+          "Setup detected: BOUNCE",
+          "Price near support",
+          0.9765424294919716
+        ],
+        [
+          "Setup detected: PULLBACK",
+          "Price near support",
+          -0.9307510238266874
+        ],
+        [
+          "Setup detected: PULLBACK",
+          "Setup detected: BOUNCE",
+          -0.908917866059854
+        ]
+      ],
+      "reason": "pf_raw_fail",
+      "status": "pooled"
+    },
+    {
+      "ticker": "NFLX",
+      "n_train": 274,
+      "n_val": 81,
+      "n_test": 106,
+      "C": 0.3,
+      "n_test_picked": 62,
+      "n_train_picked": 132,
+      "train_pf_net": 2.713712758230187,
+      "train_wr_net": 0.7424242424242424,
+      "val_pf_net": 1.1704150577898529,
+      "val_wr_net": 0.5,
+      "test_pf_net": 0.9582135826331819,
+      "test_pf_bootstrap_p5": 0.605428169344933,
+      "test_pf_bootstrap_p95": 1.468323112243408,
+      "test_wr_net": 0.5,
+      "test_avg_pnl_net": -0.024493098579232184,
+      "max_abs_coef": 0.6959931166959211,
+      "vix_stratified_pf": {
+        "low": 0.806363634023544,
+        "mid": 1.0123631941633222,
+        "high": 1.3675503418372268
+      },
+      "top_3_correlated_pairs": [
+        [
+          "Setup detected: BOUNCE",
+          "Price near support",
+          0.9927109240839405
+        ],
+        [
+          "Setup detected: PULLBACK",
+          "Price near support",
+          -0.9501617428574685
+        ],
+        [
+          "Setup detected: PULLBACK",
+          "Setup detected: BOUNCE",
+          -0.9432359417812486
+        ]
+      ],
+      "reason": "pf_raw_fail",
+      "status": "pooled"
+    },
+    {
+      "ticker": "NOW",
+      "n_train": 262,
+      "n_val": 63,
+      "n_test": 53,
+      "C": 10.0,
+      "n_test_picked": 33,
+      "n_train_picked": 145,
+      "train_pf_net": 2.0570831456262977,
+      "train_wr_net": 0.7103448275862069,
+      "val_pf_net": 1.556696780591822,
+      "val_wr_net": 0.6216216216216216,
+      "test_pf_net": 0.5307969856214306,
+      "test_pf_bootstrap_p5": 0.2649732452094669,
+      "test_pf_bootstrap_p95": 0.9914312371221493,
+      "test_wr_net": 0.42424242424242425,
+      "test_avg_pnl_net": -0.42679129092297113,
+      "max_abs_coef": 2.6001374586041557,
+      "vix_stratified_pf": {
+        "low": 0.37038829062592143,
+        "mid": 0.77783957874334,
+        "high": null
+      },
+      "top_3_correlated_pairs": [
+        [
+          "Setup detected: BOUNCE",
+          "Price near support",
+          0.9625419955273397
+        ],
+        [
+          "Setup detected: PULLBACK",
+          "Price near support",
+          -0.9478954640338911
+        ],
+        [
+          "Setup detected: PULLBACK",
+          "Setup detected: BOUNCE",
+          -0.9123891915024936
+        ]
+      ],
+      "reason": "pf_raw_fail",
+      "status": "pooled"
+    },
+    {
+      "ticker": "NVDA",
+      "n_train": 264,
+      "n_val": 53,
+      "n_test": 174,
+      "C": 0.1,
+      "n_test_picked": 101,
+      "n_train_picked": 146,
+      "train_pf_net": 1.6920624419354044,
+      "train_wr_net": 0.6095890410958904,
+      "val_pf_net": 0.8261786995849854,
+      "val_wr_net": 0.3870967741935484,
+      "test_pf_net": 1.385441564435596,
+      "test_pf_bootstrap_p5": 0.9820599264411429,
+      "test_pf_bootstrap_p95": 2.008855860349853,
+      "test_wr_net": 0.5841584158415841,
+      "test_avg_pnl_net": 0.24236435904565296,
+      "max_abs_coef": 0.36513246468416793,
+      "vix_stratified_pf": {
+        "low": 1.4121932215841255,
+        "mid": 1.4889608190078625,
+        "high": 0.25145614415933054
+      },
+      "top_3_correlated_pairs": [
+        [
+          "Setup detected: BOUNCE",
+          "Price near support",
+          0.9923847974485009
+        ],
+        [
+          "Setup detected: PULLBACK",
+          "Price near support",
+          -0.9553525070351859
+        ],
+        [
+          "Setup detected: PULLBACK",
+          "Setup detected: BOUNCE",
+          -0.9480773041860255
+        ]
+      ],
+      "reason": "pf_raw_fail",
+      "status": "pooled"
+    },
+    {
+      "ticker": "ORCL",
+      "n_train": 259,
+      "n_val": 49,
+      "n_test": 98,
+      "C": 0.1,
+      "n_test_picked": 61,
+      "n_train_picked": 131,
+      "train_pf_net": 1.7703341126562901,
+      "train_wr_net": 0.6793893129770993,
+      "val_pf_net": 0.6602785685145549,
+      "val_wr_net": 0.43333333333333335,
+      "test_pf_net": 1.6262504692833366,
+      "test_pf_bootstrap_p5": 0.9901004780231604,
+      "test_pf_bootstrap_p95": 2.8730400667521003,
+      "test_wr_net": 0.6065573770491803,
+      "test_avg_pnl_net": 0.3893837739048926,
+      "max_abs_coef": 0.5201892730065518,
+      "vix_stratified_pf": {
+        "low": 1.3918394023221923,
+        "mid": 2.139509776253789,
+        "high": null
+      },
+      "top_3_correlated_pairs": [
+        [
+          "Setup detected: BOUNCE",
+          "Price near support",
+          0.984672288678392
+        ],
+        [
+          "Setup detected: PULLBACK",
+          "Price near support",
+          -0.940032374273758
+        ],
+        [
+          "Setup detected: PULLBACK",
+          "Setup detected: BOUNCE",
+          -0.9256238294079292
+        ]
+      ],
+      "reason": "pf_bootstrap_fail",
+      "status": "pooled"
+    },
+    {
+      "ticker": "PCRHY",
+      "n_train": 252,
+      "n_val": 2,
+      "n_test": 0,
+      "reason": "low_n",
+      "status": "pooled"
+    },
+    {
+      "ticker": "PEP",
+      "n_train": 186,
+      "n_val": 4,
+      "n_test": 138,
+      "C": 1.0,
+      "n_test_picked": 58,
+      "n_train_picked": 76,
+      "train_pf_net": 1.608789317111739,
+      "train_wr_net": 0.631578947368421,
+      "val_pf_net": 0.2938073019224152,
+      "val_wr_net": 0.3333333333333333,
+      "test_pf_net": 0.5423940410298838,
+      "test_pf_bootstrap_p5": 0.3358246738273115,
+      "test_pf_bootstrap_p95": 0.8619661221670556,
+      "test_wr_net": 0.3793103448275862,
+      "test_avg_pnl_net": -0.34587561056164995,
+      "max_abs_coef": 1.5845186670690823,
+      "vix_stratified_pf": {
+        "low": 1.234567837282439,
+        "mid": 0.4287160916282914,
+        "high": 0.25934153888716666
+      },
+      "top_3_correlated_pairs": [
+        [
+          "Setup detected: BOUNCE",
+          "Price near support",
+          0.9891926407145508
+        ],
+        [
+          "Setup detected: PULLBACK",
+          "Price near support",
+          -0.9571967667437105
+        ],
+        [
+          "Setup detected: PULLBACK",
+          "Setup detected: BOUNCE",
+          -0.9468519973786388
+        ]
+      ],
+      "reason": "pf_raw_fail",
+      "status": "pooled"
+    },
+    {
+      "ticker": "PG",
+      "n_train": 276,
+      "n_val": 50,
+      "n_test": 65,
+      "C": 0.1,
+      "n_test_picked": 30,
+      "n_train_picked": 124,
+      "train_pf_net": 1.7072938828538502,
+      "train_wr_net": 0.6693548387096774,
+      "val_pf_net": 1.1535382741766527,
+      "val_wr_net": 0.5555555555555556,
+      "test_pf_net": 1.4217133248899378,
+      "test_pf_bootstrap_p5": 0.7902733450201491,
+      "test_pf_bootstrap_p95": 3.3328443334272673,
+      "test_wr_net": 0.6666666666666666,
+      "test_avg_pnl_net": 0.18872361242669689,
+      "max_abs_coef": 0.5532520538631718,
+      "vix_stratified_pf": {
+        "low": 1.597334637222868,
+        "mid": 1.6721357834308594,
+        "high": 0.3365314587918368
+      },
+      "top_3_correlated_pairs": [
+        [
+          "Setup detected: BOUNCE",
+          "Price near support",
+          0.971091836459723
+        ],
+        [
+          "Setup detected: PULLBACK",
+          "Price near support",
+          -0.9283092570011957
+        ],
+        [
+          "Setup detected: PULLBACK",
+          "Setup detected: BOUNCE",
+          -0.9014735411838517
+        ]
+      ],
+      "reason": "pf_bootstrap_fail",
+      "status": "pooled"
+    },
+    {
+      "ticker": "PM",
+      "n_train": 204,
+      "n_val": 77,
+      "n_test": 123,
+      "C": 3.0,
+      "n_test_picked": 73,
+      "n_train_picked": 111,
+      "train_pf_net": 3.2529358181084813,
+      "train_wr_net": 0.7927927927927928,
+      "val_pf_net": 1.2483768719897874,
+      "val_wr_net": 0.5208333333333334,
+      "test_pf_net": 1.1211514360137094,
+      "test_pf_bootstrap_p5": 0.7336122081183336,
+      "test_pf_bootstrap_p95": 1.8579359299576335,
+      "test_wr_net": 0.5205479452054794,
+      "test_avg_pnl_net": 0.07185078379236197,
+      "max_abs_coef": 1.9972972502484432,
+      "vix_stratified_pf": {
+        "low": 1.4002477383197067,
+        "mid": 1.0050504259053183,
+        "high": 0.0
+      },
+      "top_3_correlated_pairs": [
+        [
+          "Setup detected: BOUNCE",
+          "Price near support",
+          0.9709973187466903
+        ],
+        [
+          "Setup detected: PULLBACK",
+          "Price near support",
+          -0.9244653292620378
+        ],
+        [
+          "Setup detected: PULLBACK",
+          "Setup detected: BOUNCE",
+          -0.8976533559877157
+        ]
+      ],
+      "reason": "pf_raw_fail",
+      "status": "pooled"
+    },
+    {
+      "ticker": "QCOM",
+      "n_train": 213,
+      "n_val": 31,
+      "n_test": 128,
+      "C": 0.3,
+      "n_test_picked": 61,
+      "n_train_picked": 113,
+      "train_pf_net": 2.8223362826438283,
+      "train_wr_net": 0.7522123893805309,
+      "val_pf_net": 2.0314062831434145,
+      "val_wr_net": 0.6521739130434783,
+      "test_pf_net": 1.0513202948132438,
+      "test_pf_bootstrap_p5": 0.6608552323193764,
+      "test_pf_bootstrap_p95": 1.6757345887388455,
+      "test_wr_net": 0.5081967213114754,
+      "test_avg_pnl_net": 0.030647253822585957,
+      "max_abs_coef": 1.2610096854427462,
+      "vix_stratified_pf": {
+        "low": 1.0523928035212815,
+        "mid": 1.049271816589301,
+        "high": null
+      },
+      "top_3_correlated_pairs": [
+        [
+          "Setup detected: PULLBACK",
+          "Price near support",
+          -0.9812771836646195
+        ],
+        [
+          "Setup detected: BOUNCE",
+          "Price near support",
+          0.9721349904352228
+        ],
+        [
+          "Setup detected: PULLBACK",
+          "Setup detected: BOUNCE",
+          -0.9539338855561056
+        ]
+      ],
+      "reason": "pf_raw_fail",
+      "status": "pooled"
+    },
+    {
+      "ticker": "SNDK",
+      "n_train": 90,
+      "n_val": 0,
+      "n_test": 0,
+      "reason": "low_n",
+      "status": "pooled"
+    },
+    {
+      "ticker": "STX",
+      "n_train": 281,
+      "n_val": 25,
+      "n_test": 116,
+      "C": 0.1,
+      "n_test_picked": 72,
+      "n_train_picked": 123,
+      "train_pf_net": 1.8311277611380157,
+      "train_wr_net": 0.6422764227642277,
+      "val_pf_net": 1.6258674619996112,
+      "val_wr_net": 0.6470588235294118,
+      "test_pf_net": 1.4325463095822566,
+      "test_pf_bootstrap_p5": 0.891159184494452,
+      "test_pf_bootstrap_p95": 2.186474921536014,
+      "test_wr_net": 0.5833333333333334,
+      "test_avg_pnl_net": 0.30076372459522904,
+      "max_abs_coef": 0.5130229613822878,
+      "vix_stratified_pf": {
+        "low": 1.4561317911028382,
+        "mid": 1.281370373652838,
+        "high": Infinity
+      },
+      "top_3_correlated_pairs": [
+        [
+          "Setup detected: BOUNCE",
+          "Price near support",
+          0.9718281410577184
+        ],
+        [
+          "Setup detected: PULLBACK",
+          "Price near support",
+          -0.9647382655956671
+        ],
+        [
+          "Setup detected: PULLBACK",
+          "Setup detected: BOUNCE",
+          -0.9375597952610882
+        ]
+      ],
+      "reason": "pf_bootstrap_fail",
+      "status": "pooled"
+    },
+    {
+      "ticker": "TMO",
+      "n_train": 211,
+      "n_val": 10,
+      "n_test": 133,
+      "reason": "val_wr_fail",
+      "status": "pooled"
+    },
+    {
+      "ticker": "TSLA",
+      "n_train": 186,
+      "n_val": 49,
+      "n_test": 142,
+      "C": 0.1,
+      "n_test_picked": 69,
+      "n_train_picked": 89,
+      "train_pf_net": 1.9341954445699434,
+      "train_wr_net": 0.5955056179775281,
+      "val_pf_net": 0.8222576802768929,
+      "val_wr_net": 0.43478260869565216,
+      "test_pf_net": 1.0638767866358667,
+      "test_pf_bootstrap_p5": 0.6641021004107166,
+      "test_pf_bootstrap_p95": 1.689682549681395,
+      "test_wr_net": 0.4492753623188406,
+      "test_avg_pnl_net": 0.055959208333104624,
+      "max_abs_coef": 0.4652074589815401,
+      "vix_stratified_pf": {
+        "low": 1.0063947745428046,
+        "mid": 1.2769358588409394,
+        "high": 0.0
+      },
+      "top_3_correlated_pairs": [
+        [
+          "Setup detected: BOUNCE",
+          "Price near support",
+          0.9675815168602332
+        ],
+        [
+          "Setup detected: PULLBACK",
+          "Price near support",
+          -0.945772723717765
+        ],
+        [
+          "Setup detected: PULLBACK",
+          "Setup detected: BOUNCE",
+          -0.9151122066198674
+        ]
+      ],
+      "reason": "pf_raw_fail",
+      "status": "pooled"
+    },
+    {
+      "ticker": "TXN",
+      "n_train": 228,
+      "n_val": 24,
+      "n_test": 118,
+      "C": 0.1,
+      "n_test_picked": 47,
+      "n_train_picked": 95,
+      "train_pf_net": 2.1380634647649086,
+      "train_wr_net": 0.6526315789473685,
+      "val_pf_net": 0.870600288784016,
+      "val_wr_net": 0.47058823529411764,
+      "test_pf_net": 1.266164147450935,
+      "test_pf_bootstrap_p5": 0.7205934142027732,
+      "test_pf_bootstrap_p95": 2.129876502455836,
+      "test_wr_net": 0.5319148936170213,
+      "test_avg_pnl_net": 0.15359738648503832,
+      "max_abs_coef": 0.2754767126125173,
+      "vix_stratified_pf": {
+        "low": 0.26625280061747736,
+        "mid": 2.678217186086098,
+        "high": 0.37538749504365143
+      },
+      "top_3_correlated_pairs": [
+        [
+          "Setup detected: PULLBACK",
+          "Price near support",
+          -0.956182887467513
+        ],
+        [
+          "Setup detected: BOUNCE",
+          "Price near support",
+          0.9482481364610676
+        ],
+        [
+          "Setup detected: PULLBACK",
+          "Setup detected: BOUNCE",
+          -0.9066986411570304
+        ]
+      ],
+      "reason": "pf_raw_fail",
+      "status": "pooled"
+    },
+    {
+      "ticker": "UNH",
+      "n_train": 186,
+      "n_val": 26,
+      "n_test": 67,
+      "C": 0.1,
+      "n_test_picked": 29,
+      "n_train_picked": 99,
+      "train_pf_net": 1.6802666466140301,
+      "train_wr_net": 0.6868686868686869,
+      "val_pf_net": 1.417765529161071,
+      "val_wr_net": 0.6666666666666666,
+      "test_pf_net": 0.9780855612969696,
+      "test_pf_bootstrap_p5": 0.5075904554003254,
+      "test_pf_bootstrap_p95": 1.9255574910069908,
+      "test_wr_net": 0.5172413793103449,
+      "test_avg_pnl_net": -0.017535221866457583,
+      "max_abs_coef": 0.3504765096727973,
+      "vix_stratified_pf": {
+        "low": 0.813333527364942,
+        "mid": 1.7823463379436892,
+        "high": null
+      },
+      "top_3_correlated_pairs": [
+        [
+          "Setup detected: PULLBACK",
+          "Price near support",
+          -0.9677688229416579
+        ],
+        [
+          "Setup detected: BOUNCE",
+          "Price near support",
+          0.9473100300468498
+        ],
+        [
+          "Setup detected: PULLBACK",
+          "Setup detected: BOUNCE",
+          -0.9167771127392643
+        ]
+      ],
+      "reason": "pf_raw_fail",
+      "status": "pooled"
+    },
+    {
+      "ticker": "UPS",
+      "n_train": 88,
+      "n_val": 12,
+      "n_test": 115,
+      "C": 1.0,
+      "n_test_picked": 29,
+      "n_train_picked": 46,
+      "train_pf_net": 6.435386900472099,
+      "train_wr_net": 0.8695652173913043,
+      "val_pf_net": 0.8925129632987121,
+      "val_wr_net": 0.4,
+      "test_pf_net": 0.6428063413729215,
+      "test_pf_bootstrap_p5": 0.31242718854894,
+      "test_pf_bootstrap_p95": 1.2605272398347447,
+      "test_wr_net": 0.4482758620689655,
+      "test_avg_pnl_net": -0.25745385297817697,
+      "max_abs_coef": 1.8137490888065604,
+      "vix_stratified_pf": {
+        "low": 2.102933929854203,
+        "mid": 0.20695885495914038,
+        "high": 0.0
+      },
+      "top_3_correlated_pairs": [
+        [
+          "Setup detected: PULLBACK",
+          "Price near support",
+          -0.977502233646877
+        ],
+        [
+          "Setup detected: BOUNCE",
+          "Price near support",
+          0.9553525070351837
+        ],
+        [
+          "Setup detected: PULLBACK",
+          "Setup detected: BOUNCE",
+          -0.9338592095470353
+        ]
+      ],
+      "reason": "pf_raw_fail",
+      "status": "pooled"
+    },
+    {
+      "ticker": "V",
+      "n_train": 273,
+      "n_val": 84,
+      "n_test": 97,
+      "C": 0.3,
+      "n_test_picked": 53,
+      "n_train_picked": 144,
+      "train_pf_net": 2.8855859119186973,
+      "train_wr_net": 0.7986111111111112,
+      "val_pf_net": 1.0485416855384166,
+      "val_wr_net": 0.5576923076923077,
+      "test_pf_net": 0.3438246076310948,
+      "test_pf_bootstrap_p5": 0.1978236173548346,
+      "test_pf_bootstrap_p95": 0.5545015302741482,
+      "test_wr_net": 0.3018867924528302,
+      "test_avg_pnl_net": -0.616951063672718,
+      "max_abs_coef": 1.0067406491977173,
+      "vix_stratified_pf": {
+        "low": 0.2280761469701524,
+        "mid": 0.4556452195373868,
+        "high": null
+      },
+      "top_3_correlated_pairs": [
+        [
+          "Setup detected: BOUNCE",
+          "Price near support",
+          0.9769267960867289
+        ],
+        [
+          "Setup detected: PULLBACK",
+          "Price near support",
+          -0.9155519068396086
+        ],
+        [
+          "Setup detected: PULLBACK",
+          "Setup detected: BOUNCE",
+          -0.894427190999917
+        ]
+      ],
+      "reason": "pf_raw_fail",
+      "status": "pooled"
+    },
+    {
+      "ticker": "WDC",
+      "n_train": 270,
+      "n_val": 21,
+      "n_test": 135,
+      "C": 3.0,
+      "n_test_picked": 69,
+      "n_train_picked": 138,
+      "train_pf_net": 1.7891833451915735,
+      "train_wr_net": 0.6231884057971014,
+      "val_pf_net": 3.277837501347828,
+      "val_wr_net": 0.7272727272727273,
+      "test_pf_net": 1.8857639013656138,
+      "test_pf_bootstrap_p5": 1.2157399301605274,
+      "test_pf_bootstrap_p95": 3.0110138197015073,
+      "test_wr_net": 0.6521739130434783,
+      "test_avg_pnl_net": 0.5944060134842253,
+      "max_abs_coef": 1.8038838847657133,
+      "vix_stratified_pf": {
+        "low": 2.1296937501347832,
+        "mid": 1.6018379636620836,
+        "high": Infinity
+      },
+      "top_3_correlated_pairs": [
+        [
+          "Setup detected: BOUNCE",
+          "Price near support",
+          0.9779546762694075
+        ],
+        [
+          "Setup detected: PULLBACK",
+          "Price near support",
+          -0.9494415722538728
+        ],
+        [
+          "Setup detected: PULLBACK",
+          "Setup detected: BOUNCE",
+          -0.9285108254302578
+        ]
+      ],
+      "reason": "ok",
+      "status": "confident"
+    },
+    {
+      "ticker": "WFC",
+      "n_train": 226,
+      "n_val": 70,
+      "n_test": 165,
+      "C": 3.0,
+      "n_test_picked": 97,
+      "n_train_picked": 120,
+      "train_pf_net": 1.7618086494272776,
+      "train_wr_net": 0.6666666666666666,
+      "val_pf_net": 1.4952388712816462,
+      "val_wr_net": 0.6060606060606061,
+      "test_pf_net": 1.1772341973317741,
+      "test_pf_bootstrap_p5": 0.8239441166351317,
+      "test_pf_bootstrap_p95": 1.7393395854558755,
+      "test_wr_net": 0.5670103092783505,
+      "test_avg_pnl_net": 0.09999398027307048,
+      "max_abs_coef": 1.4075435990288796,
+      "vix_stratified_pf": {
+        "low": 1.2168897630427191,
+        "mid": 1.0551766038556554,
+        "high": Infinity
+      },
+      "top_3_correlated_pairs": [
+        [
+          "Setup detected: BOUNCE",
+          "Price near support",
+          0.9824069710614461
+        ],
+        [
+          "Setup detected: PULLBACK",
+          "Price near support",
+          -0.9737742921052996
+        ],
+        [
+          "Setup detected: PULLBACK",
+          "Setup detected: BOUNCE",
+          -0.9566426528046804
+        ]
+      ],
+      "reason": "pf_raw_fail",
+      "status": "pooled"
+    },
+    {
+      "ticker": "WMT",
+      "n_train": 317,
+      "n_val": 85,
+      "n_test": 213,
+      "C": 0.1,
+      "n_test_picked": 143,
+      "n_train_picked": 173,
+      "train_pf_net": 2.608217839895577,
+      "train_wr_net": 0.7456647398843931,
+      "val_pf_net": 1.5880966501203941,
+      "val_wr_net": 0.640625,
+      "test_pf_net": 0.9353573577608276,
+      "test_pf_bootstrap_p5": 0.6850570529077854,
+      "test_pf_bootstrap_p95": 1.2780041658987262,
+      "test_wr_net": 0.5034965034965035,
+      "test_avg_pnl_net": -0.04521726569948744,
+      "max_abs_coef": 0.4786163532744825,
+      "vix_stratified_pf": {
+        "low": 1.737136671183939,
+        "mid": 0.6750450224322282,
+        "high": 0.5554206172606554
+      },
+      "top_3_correlated_pairs": [
+        [
+          "Setup detected: BOUNCE",
+          "Price near support",
+          0.9231172852828977
+        ],
+        [
+          "Setup detected: PULLBACK",
+          "Price near support",
+          -0.91980528800854
+        ],
+        [
+          "Setup detected: PULLBACK",
+          "Setup detected: BOUNCE",
+          -0.8490881604552974
+        ]
+      ],
+      "reason": "pf_raw_fail",
+      "status": "pooled"
+    },
+    {
+      "ticker": "XOM",
+      "n_train": 167,
+      "n_val": 30,
+      "n_test": 164,
+      "C": 10.0,
+      "n_test_picked": 79,
+      "n_train_picked": 85,
+      "train_pf_net": 1.7714858331898835,
+      "train_wr_net": 0.6588235294117647,
+      "val_pf_net": 0.5009013480144897,
+      "val_wr_net": 0.3333333333333333,
+      "test_pf_net": 1.2269083653104182,
+      "test_pf_bootstrap_p5": 0.8445506217043482,
+      "test_pf_bootstrap_p95": 1.9039044208259734,
+      "test_wr_net": 0.5822784810126582,
+      "test_avg_pnl_net": 0.1379889256089628,
+      "max_abs_coef": 2.49976016274274,
+      "vix_stratified_pf": {
+        "low": 1.2685886894137317,
+        "mid": 1.205300509087248,
+        "high": 1.214348114544506
+      },
+      "top_3_correlated_pairs": [
+        [
+          "Setup detected: PULLBACK",
+          "Price near support",
+          -0.9759555991113038
+        ],
+        [
+          "Setup detected: BOUNCE",
+          "Price near support",
+          0.9757952670551996
+        ],
+        [
+          "Setup detected: PULLBACK",
+          "Setup detected: BOUNCE",
+          -0.9523328544688321
+        ]
+      ],
+      "reason": "pf_raw_fail",
+      "status": "pooled"
+    }
+  ],
+  "system_wide_corr_flags": [
+    [
+      "Price near support",
+      "Setup detected: BOUNCE",
+      0.9716425990196511,
+      52
+    ],
+    [
+      "Price near support",
+      "Setup detected: PULLBACK",
+      -0.9412315028146121,
+      52
+    ],
+    [
+      "Setup detected: BOUNCE",
+      "Setup detected: PULLBACK",
+      -0.9137506990611806,
+      52
+    ]
+  ],
+  "dry_run": false,
+  "runtime_seconds": 6.359894037246704
+}
