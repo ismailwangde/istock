@@ -236,6 +236,12 @@ def _current_currency() -> str:
     return st.session_state.get("display_currency", "USD")
 
 
+def _md_dollars(text: str) -> str:
+    """Escape $ for st.markdown. Streamlit treats a pair of $ as LaTeX math, so
+    two dollar amounts in one block turn everything between them into garbage."""
+    return text.replace("$", "\\$")
+
+
 def _fmt_currency(amount_inr: Optional[float], currency: str,
                   fx: float, *, signed: bool = False) -> str:
     """Format an INR-denominated amount in the chosen display currency.
@@ -1735,7 +1741,7 @@ def render_trade_review(holdings: List[Dict[str, Any]]):
                      f"vs holding it.")
     if best and best[1] > 0:
         lines.append(f"Selling **{best[0]}** added **{_fmt_currency(best[1], currency, fx)}**.")
-    st.markdown("  \n".join(lines))
+    st.markdown(_md_dollars("  \n".join(lines)))
 
     s = summarize(rows)
     m1, m2, m3, m4 = st.columns(4)
@@ -3454,11 +3460,11 @@ def render_deepdive_sizing(symbol: str, analysis: Optional[Dict[str, Any]]):
             )
             _cur = _current_currency()
             _fx = fetch_usd_inr()
-            st.markdown(
+            st.markdown(_md_dollars(
                 f"- Notional: {_fmt_currency(sizing['position_value_inr'], _cur, _fx)}\n"
                 f"- Risk amount: {_fmt_currency(sizing['risk_amount_inr'], _cur, _fx)}\n"
                 f"- Portfolio %: {sizing['risk_pct_of_portfolio']:.2f}%"
-            )
+            ))
         else:
             st.markdown(
                 "<div style='font-size:28px;font-weight:700;color:#dc2626;'>"

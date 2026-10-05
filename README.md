@@ -1,84 +1,99 @@
 # istock
 
-**Transparency-first equity research — the anti–black-box.**
+**A stock research tool that shows its work, and never tells you to buy.**
 
-There's a wave of "AI picks your stocks" products right now: you type a ticker, it
-says *BUY*, and you're asked to trust a number you can't inspect. istock is the
-opposite bet. It shows you **the entire reasoning** — every metric, honest
-confidence labels, and the costs — and lets *you* decide whether to believe it.
+I set out to predict which way stocks would move, using news, chart signals, momentum
+and machine learning. Once trading costs were counted, none of it beat a coin flip. So I
+stopped trying to predict, and started measuring instead.
 
-> The goal isn't a magic verdict. It's an analyst that shows its work.
-
----
-
-## Why this exists
-
-Most retail "AI investing" tools optimize for a confident answer. That's exactly
-the wrong thing to trust: a backtest that looks great is usually hiding
-survivorship bias, look-ahead, or costs that quietly erase the edge. istock is
-built on the opposite principle — **be honest about what's real, and show it** —
-even when the honest answer is "this doesn't work."
+istock helps an analyst **before** a trade (where to look, and the case for and against)
+and **after** it (did the trading actually beat doing nothing?).
 
 ---
 
-## What's inside
+## What it does
 
-**1. Fundamental analysis engine (12 modules)**
-Give it a ticker; it runs a full due-diligence checklist and returns a 0–100
-quality score, a verdict, and *every underlying number* — not just the verdict.
-- Accounting forensics (Beneish M, Sloan accruals, Piotroski F)
-- Returns on capital (ROIC − WACC spread, DuPont ROE)
-- Valuation (reverse-DCF reality check + DCF scenarios)
-- Sector-percentile peer ranking, moat/quality, growth, capital allocation
-- A dedicated model for banks (different economics need a different model)
-- **Honest confidence labels** on every signal — robust (⭐) vs. near-worthless (☠️)
+### 1. Shortlists the stocks worth a closer look
+Every stock in the universe gets a 0–100 score and a quality band, from Poor to Excellent.
+The high scorers are shortlisted with their top strengths, so you know where to look first.
+It's a screener, not a buy list.
 
-**2. Strategy-research harness (QuantConnect / LEAN)**
-Replicates *published* trading strategies and stress-tests them honestly on
-survivorship-bias-free minute data — then **rejects the ones that don't survive**:
-- Transaction costs, short-borrow fees, and regime dependence, all modeled
-- Separates **gross signal from net-of-cost reality** (where most edges die)
-- Per-year breakdowns so a single lucky year can't masquerade as an edge
+![Shortlist of high-scoring stocks](docs/images/shortlist.png)
 
-**3. Forward-logging validation**
-Instead of a survivorship-biased backtest, scores are logged *forward* and
-measured later — clean by construction (no look-ahead, no delisting scrub).
+### 2. Lays out the full picture for one stock
+**View full analysis** opens a breakdown of fundamentals, technicals, market context
+and risk & volatility, each scored, plus a price chart with reference levels.
 
----
+![Deep-dive with section scores](docs/images/deep-dive.png)
 
-## Design principles
+**Why This Score?** puts the case for and against side by side: what's supporting the
+score, and what's a risk, right now.
 
-- **Classify first, then apply the right model** — no cherry-picked thresholds.
-- **Trend over snapshot** — multi-year series, not a single reading.
-- **Robust vs. decorative** — strong signals are weighted; weak ones are shown as
-  context only, never dressed up as alpha.
-- **Costs are always on** — net-of-cost is the only number that counts.
-- **Honest about limits** — missing or inapplicable data says so, out loud.
+![Supporting factors vs risks](docs/images/case-for-against.png)
 
----
+### 3. Reviews your trades afterwards
+**Trade Review** compares what you actually made with two alternatives on the same money:
+never selling, and just buying the index (S&P 500 for US stocks, Nifty 50 for Indian ones).
+It shows win/loss sizes, which sells helped or hurt, and which positions beat the index.
 
-## Honest findings so far
+![Trade Review: your result vs never selling vs the index](docs/images/trade-review.png)
 
-Because the point is honesty, the rejections are part of the record:
+*The portfolio above is a labelled sample: a simple rule (sell half at +8%, hold losers,
+buy back 5% dips) run on real closing prices. Not real trades.*
 
-- **Opening-Range Breakout + relative volume** — looked promising on a short
-  sample; on 10 years it was **gross-negative in every year**. Rejected.
-- **Intraday momentum** — statistically underpowered on available free data;
-  pending a longer test.
-- **ConnorsRSI mean-reversion** — the most promising candidate; currently in
-  full cost- and regime-stress testing before any claim is made.
+The Home page also covers the basics: today's best and worst movers, and how your money
+is spread across sectors.
 
 ---
 
-## Roadmap
+## What I tested, and what failed
 
-Research project, in active development. Next: **ML meta-labeling** — a model that
-doesn't imitate the rules, but decides *when to trust each rule* (run a strategy
-only in the regimes where it historically works).
+Every idea got a fair test: survivorship-free data, trading costs included, and results
+checked year by year so one lucky year couldn't pass as an edge.
+
+| Idea | Result |
+|---|---|
+| Up/down prediction with 36 chart signals (logistic regression, LightGBM) | No skill. Out-of-sample AUC 0.51, where 0.50 is a coin flip |
+| News and sentiment | Priced in within seconds |
+| Chart patterns and technical triggers | The best edge was smaller than trading costs |
+| Opening-range breakout | Lost money every year, even before costs |
+| Mean-reversion shorts (ConnorsRSI) | Margin-called in the January 2021 meme-stock squeeze |
+| Dual momentum | +30% vs the S&P 500's +371% (2008–2024) |
+
+The one thing that held up was not a stock-picking rule: an equal mix of momentum, value
+and quality factors beat a risk-matched S&P 500 by about 3 percentage points a year
+(1999–2026). The full write-up is in [istock/CONCLUSIONS.md](istock/CONCLUSIONS.md).
+
+![Evidence-Based page](docs/images/evidence.png)
+
+What *is* predictable is how much a stock moves, not which way. That's why the tool
+measures risk and quality instead of issuing calls.
 
 ---
 
-## Disclaimer
+## Run it
 
-Personal research project, for educational purposes. **Not** financial advice.
-Do your own research before making any investment decision.
+```bash
+git clone https://github.com/ismailwangde/istock.git
+cd istock
+python3 -m venv .venv && source .venv/bin/activate
+pip install -r requirements.txt
+streamlit run istock/ui/app.py
+```
+
+Needs Python 3.11+ and an internet connection (prices come from Yahoo Finance).
+More detail in [RUN.md](RUN.md).
+
+## Limits
+
+- Trade Review doesn't include trading costs or taxes yet.
+- The screener scans 10 stocks by default, to keep it fast.
+- Data comes from free Yahoo Finance feeds, which can be delayed or patchy.
+
+## Built with
+
+Python, Streamlit, pandas, yfinance, Plotly.
+
+---
+
+Personal project, for learning. **Not financial advice.**
